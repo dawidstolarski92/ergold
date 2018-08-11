@@ -1,0 +1,37 @@
+.em-wrapper {  padding:24px  37px!important; }
+.em-wrapper h1,
+.em-wrapper h2,
+.em-wrapper h3,
+.em-wrapper h4
+{ font-family: "sinkin_sans300_light"; }
+
+.em-wrapper h1 { font-size: 30px; letter-spacing: -.03em; color: #515151; margin:19px 0 0 0!important }
+.em-wrapper h3 { font-size: 25px!important; letter-spacing: -0.01em; color: #DE006E; margin: 6px 0!important; padding: 2px 0 59px!important; text-transform:none!important; line-height: normal!important; border: 0 none!important }
+.em-wrapper h2 { font-weight: bold; font-size: 19px; letter-spacing:-0.03em; margin: 32px 0 38px!important; color: #515151; }
+.em-wrapper h4 {color: #515151; font-size: 17px; font-weight:bold; margin-bottom: 20px; }
+.em-box p { font-size: 16px; }
+
+
+.em-box { 
+	background: #F6F6F6;
+	padding: 15px 20px;
+	color: #515151;
+}
+
+.em-button a { background: #DE006E; text-transform: uppercase; font-size: 16px; display:inline-block; padding: 5px 45px 9px; color: white; font-weight: normal;
+}
+
+.em-button a:hover {text-decoration: none; color:white; }
+
+.em-wrapper  { margin-top: 40px; }
+.em-wrapper  small { font-size:14px; margin: 10px 0; display: inline-block; letter-spacing:-0.03em; }
+
+.addWordsbanner  { margin: 40px 0 20px; }
+
+.robot { background: url(../img/robot.png); width: 165px; height: 199px; position: absolute; right:20px; bottom: 20px;  }
+.featured { font-size: 15px; margin-bottom: 5px; }
+.em-box .text-pink { color: #DE006E; font-size: 20px; }
+.gImages { padding: 20px 0; border-top: solid 1px #eee; }
+.gImages img { margin: auto; display: block; }
+.outersmall { font-size: 11px!important; display:block!important; }
+.clearer { float: none; clear: both; overflow: hidden; }

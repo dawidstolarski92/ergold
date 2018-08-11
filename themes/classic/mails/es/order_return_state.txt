@@ -1,0 +1,14 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Hemos actualizado el progreso en su devolución #{id_order_return}, the
+new status is: "{state_order_return}"
+
+MESSAGE: {message} 		 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+

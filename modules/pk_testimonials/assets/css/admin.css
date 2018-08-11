@@ -1,0 +1,51 @@
+#box-table-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 5px;
+	width: 98%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#box-table-a th
+{
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px;
+	background: #8bc954;
+	border-top: 4px solid #71b238;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+#box-table-a td
+{
+	padding: 8px;
+	background: #eee; 
+	border-bottom: 1px solid #fff;
+	color: #222;
+	border-top: 1px solid transparent;
+}
+#box-table-a tr:hover td
+{
+	background: #e1e1e1;
+	color: #111;
+}
+
+.bootstrap #testimonialCfg .margin-form input[type="text"] {
+	max-width:350px !important;
+	width:30%
+	}
+span.disabled {
+	background: #c90101;
+	line-height: 20px;
+	padding: 0 10px;
+	color:#fff;
+	display: inline-block;
+	}
+span.enabled {
+	display: inline-block;
+	background: #8bc954;
+	line-height: 20px;
+	padding: 0 10px;
+	color:#fff
+	}

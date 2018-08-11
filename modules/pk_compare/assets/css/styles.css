@@ -1,0 +1,107 @@
+#content {
+	padding: 0;
+	border:none;	
+}
+.product-thumbnail .btn.in_comparison {
+	background-color:#e1e1e1;
+}
+.product-thumbnail .btn.in_comparison svg {
+	color:#555;
+}
+.product-thumbnail .add_to_compare .svgic {width: 18px; height: 18px;}
+.products_block {
+	display:flex;
+	justify-content:space-between
+}
+.products_block .product-block {
+	border:1px solid #f3f3f3;
+	padding: 30px;
+	width:19%;
+}
+.product-block a {
+	display: block;
+}
+.sale-box {
+	background: #f00;
+	color:#fff;
+	font:normal 14px/24px Arial
+	left:0;
+	padding: 5px 0;
+	position: absolute;
+	text-align:center;
+	top:10px;
+	width:80px;
+}
+.cmp-remove {
+	cursor: pointer;
+}
+.cmp-remove .svgic {
+	height:12px;
+	width:12px;
+	color:#a8a8a8
+}
+.button-container {
+	margin-bottom: 30px;
+}
+.comparison_infos {
+	padding: 0;	
+}
+.cell-space {
+	padding: 0.75em 1em;
+}
+.comparison_infos .product-name {
+	font-size: 1.125em;	
+	margin: 30px 0 0;
+	font-weight: normal;
+	color: #444;
+}
+#product_comparison .star_content {
+	margin: 6px auto 0;
+}
+#wrapper #product_comparison h6 {
+	font-weight: normal;
+	margin: 0;
+	letter-spacing: 0.15em;
+	font-size: 0.938em;
+}
+#product_comparison td {
+	padding: 1rem;
+	font-size: 0.938em;
+}
+#product_comparison td:first-child {
+	text-transform: uppercase;
+}
+#product_comparison td:first-child h6 {
+	padding:0 20px;
+}
+#product_comparison td:not(:first-child) {
+	text-align:center
+}
+#product_comparison p {
+	margin:0
+}
+#product_comparison {
+	border-collapse: collapse;
+}
+#product_comparison .product-price-and-shipping {
+	display: inline-block;
+	margin: 0;
+}
+#wrapper .wide-space {
+	padding: 2rem;
+}
+@media (max-width : 1024px) {
+	#product_comparison td:first-child,
+	.cmp-description {display: none}
+	#wrapper .wide-space,
+	#product_comparison td {
+		padding: 0.5em;
+		font-size: 0.75em;
+	}
+	.btn.add-to-cart {
+		text-transform: none;
+		letter-spacing: 0;	
+		padding-left:10px;
+		padding-right: 10px;
+	}
+}

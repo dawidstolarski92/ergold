@@ -1,0 +1,1 @@
+# Stroniarz Synch Client

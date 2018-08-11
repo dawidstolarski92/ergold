@@ -1,0 +1,19 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Su pedido con referencia {order_name} desde {shop_name} has
+been cancelled. 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+
+Si realizó su pedido desde una cuenta de invitado, puede realizar un seguimiento del mismo desde la sección
+"Seguimiento de invitadio"
+[{guest_tracking_url}?id_order={order_name}]
+de nuestra tienda. 
+
+ 
+

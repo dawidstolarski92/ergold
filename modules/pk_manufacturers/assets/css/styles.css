@@ -1,0 +1,48 @@
+/* Block manufacturer */
+.manuf-indent {
+  padding-right: 30px;
+}
+.pk-brands ul li {
+  width:200px;
+}
+.pk-brands ul li span {
+  line-height: 30px;
+  font-size: 14px;
+}
+.pk-brands ul li img {
+  max-width:100%;
+  width:100%;
+  height: auto;
+}
+.pk-brands ul li img:hover {
+  filter: brightness(50%);
+}
+.pk-brands .flexisel-nav {
+  position: absolute;
+  z-index: 9;
+  width:20px;
+  height:20px;
+  top:50%
+}
+.pk-brands .flexisel-nav.nbs-flexisel-nav-left {
+  left:-50px;
+}
+.pk-brands .flexisel-nav.nbs-flexisel-nav-right {
+  right:-50px;
+}
+.pk-brands:hover .flexisel-nav.nbs-flexisel-nav-left {
+  left:2px;
+}
+.pk-brands:hover .flexisel-nav.nbs-flexisel-nav-right {
+  right:2px;
+}
+.mnf-nbs-flexisel-container {
+  position: relative;
+  max-width: 100%;
+}
+.pk-brands .nbs-flexisel-inner {
+  width:calc(100% + 30px)
+}
+.m-list {
+  list-style: none;
+}

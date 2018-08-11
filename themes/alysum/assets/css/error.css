@@ -1,0 +1,269 @@
+html {
+  box-sizing: border-box;
+}
+body, html {
+  height:100%; 
+  margin: 0;
+  min-height:100%; 
+  padding: 0; 
+}
+body {
+  font: normal 16px/22px Georgia, "Times New Roman"
+}
+a, a:active, a:visited {
+  color:#333;
+  text-decoration:none
+}
+a:hover {text-decoration:none;}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#layout-error {
+	height:100%;
+	min-height:100%; 
+	display:flex;
+	align-items:center;
+}
+#main {
+	width: 100%;
+	display:flex;
+	align-items:center;
+	flex-direction:column
+}
+#message {
+	width: 100%;	
+}
+.title {
+	margin-bottom: 60px;
+	font-family: 'Roboto';
+}
+#content {
+	color: #666;
+	letter-spacing: 0.02em;
+	text-align:center
+}
+h1 {
+	color:#313131;
+	font-size: 30px;	
+	line-height: 40px;
+	letter-spacing: 0.2em;
+	margin: 0 0 20px 0;
+	text-align:center;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+	font-weight: 500;
+}
+h2 {
+	border:3px solid #333;
+	padding: 0 25px;
+	line-height: 60px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color:#1f2223;
+	font-size: 32px;
+	margin: 0 0 50px;
+	text-align:center;
+	font-family: 'Abhaya Libre';
+	text-transform: uppercase;
+}
+.countdown_row {
+	display:flex;	
+}
+.countdown_row > span {
+	width:25%;
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+.countdown_row > span:not(:first-child) {
+	border-left:1px solid #d4d4d4
+}
+.countdown_section {
+	text-transform: uppercase;
+	font-size: 16px;
+	color:#4c4c4c;
+	font-family: Roboto;
+	letter-spacing: 0.2em;
+}
+.countdown_section .countdown_amount {
+	color:#272727;
+	font-size: 120px;
+	line-height: 130px;
+	font-family: 'Archivo Narrow';
+	margin-bottom: 25px;
+}
+#maintenance-main {
+	width: 90%;
+	max-width: 1120px;	
+	margin: 0 auto;
+}
+.send_form {
+	margin: 0 auto;
+	width: 500px;
+}
+.send_form form {
+	margin: 0 auto;
+	width: 330px;
+	position: relative;
+}
+.send_form form label {
+	position: absolute;
+	z-index: 2;
+	top:calc(50% - 10px);
+	right:25px;
+}
+.send_form h4 {
+	margin: 0;	
+	text-align:center;
+	font-family: 'Roboto';
+	font-weight: 100;
+	font-size: 28px;
+	letter-spacing: 0.036em;
+	margin-bottom: 30px;
+}
+.someTimer {
+	margin-bottom: 80px;	
+}
+.cs-email {
+	width: 330px;
+	margin: 0 auto;
+	line-height: 20px;
+	color:#424242;
+	font-size: 16px;
+	font-family: Roboto;
+	background: none;
+	border:1px solid #959595;
+	border-radius:22px;
+	padding: 11px 25px;
+	font-weight: 100;
+}
+.hide-button { display: none;}
+svg {pointer-events: none;}
+#cs-submit {cursor: pointer;}
+
+
+
+.jqifade{
+	position: absolute; 
+	background-color: #777777; 
+}
+iframe.jqifade{
+	display:block;
+	z-index:-1;
+}
+div.jqi{ 
+	width: 400px; 
+	max-width:90%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	position: absolute; 
+	background-color: #fff; 
+	font-size: 11px; 
+	text-align: left; 
+	border: solid 1px #eee;
+	padding: 7px;
+}
+div.jqi .jqicontainer{ 
+}
+div.jqi .jqiclose{ 
+	position: absolute;
+	top: 4px; right: -2px; 
+	width: 18px; 
+	cursor: default; 
+	color: #bbbbbb; 
+	font-weight: bold; 
+}
+div.jqi .jqistate{
+	background-color: #fff;
+}
+div.jqi .jqititle{
+	padding: 5px 10px;
+	font-size: 16px; 
+	line-height: 20px; 
+	border-bottom: solid 1px #eee;
+}
+div.jqi .jqimessage{ 
+	padding: 10px; 
+	line-height: 20px; 
+	color: #444444;
+	font-size: 14px; 
+	overflow: auto;
+}
+div.jqi .jqibuttonshide{
+	display: none;
+} 
+div.jqi .jqibuttons{ 
+	text-align: right; 
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4; 
+	background-color: #f4f4f4;
+}
+div.jqi .jqibuttons button{ 
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal; 
+	border: none;
+	border-left: solid 1px #e4e4e4; 
+	color: #777; 
+	font-weight: bold; 
+	font-size: 12px; 
+}
+div.jqi .jqibuttons button.jqidefaultbutton{
+	color: #489afe;
+}
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus{
+	color: #287ade;
+	outline: none;
+}
+div.jqi .jqibuttons button[disabled]{
+	color: #aaa;
+}
+.jqiwarning .jqi .jqibuttons{ 
+	background-color: #b95656;
+}
+
+/* sub states */
+div.jqi .jqiparentstate::after{ 
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+}
+div.jqi .jqisubstate{
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eee;
+	border-top: none;
+}
+div.jqi .jqisubstate .jqibuttons button{
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+.jqi .jqiarrow{ position: absolute; height: 0; width:0; line-height: 0; font-size: 0; border: solid 10px transparent;}
+
+.jqi .jqiarrowtl{ left: 10px; top: -20px; border-bottom-color: #fff; }
+.jqi .jqiarrowtc{ left: 50%; top: -20px; border-bottom-color: #fff; margin-left: -10px; }
+.jqi .jqiarrowtr{ right: 10px; top: -20px; border-bottom-color: #fff; }
+
+.jqi .jqiarrowbl{ left: 10px; bottom: -20px; border-top-color: #fff; }
+.jqi .jqiarrowbc{ left: 50%; bottom: -20px; border-top-color: #fff; margin-left: -10px; }
+.jqi .jqiarrowbr{ right: 10px; bottom: -20px; border-top-color: #fff; }
+
+.jqi .jqiarrowlt{ left: -20px; top: 10px; border-right-color: #fff; }
+.jqi .jqiarrowlm{ left: -20px; top: 50%; border-right-color: #fff; margin-top: -10px; }
+.jqi .jqiarrowlb{ left: -20px; bottom: 10px; border-right-color: #fff; }
+
+.jqi .jqiarrowrt{ right: -20px; top: 10px; border-left-color: #fff; }
+.jqi .jqiarrowrm{ right: -20px; top: 50%; border-left-color: #fff; margin-top: -10px; }
+.jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #fff; }
+.cs-submit {cursor: pointer;}

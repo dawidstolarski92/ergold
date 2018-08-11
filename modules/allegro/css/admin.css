@@ -1,0 +1,63 @@
+/* Menu icon */
+i[class^='icon-AdminAllegro']:before, .process-icon-legal:before {content: ""}
+
+.divider {max-width: 280px; float: left;}
+.divider > div {margin-bottom: 4px; margin-right: 40px;}
+.variant {display: inline-block; width: 100px}
+.bootstrap .divider .control-label {min-width: 50px; text-align: left!important; display: inline;}
+
+.override-box {padding-top: 6px}
+.override-box label {font-weight: normal; cursor: pointer;}
+
+.bootstrap .progress-bar, .bootstrap .progress {height: 30px; line-height: 30px;}
+
+/* FIX */
+.bootstrap .dropdown-menu .divider {float: none;}
+
+.image-box {float: left; overflow: hidden; margin: 0 10px 10px 0}
+.image-box > div {margin: 5px 0}
+
+.bootstrap .table td[rowspan] {
+    border-left: 1px solid #EAEDEF;
+    border-right: 1px solid #EAEDEF;
+}
+
+i.process-icon-create_auction:before, i.process-icon-simulation:before {
+	content: "\f0e3";
+}
+
+label {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.bootstrap label.required.allegro:before {
+	color: orange;
+}
+
+/* Auctions */
+.auctionMapForm input[type="text"] {
+    max-width: 200px;
+    display: inline-block;
+    float: left;
+}
+.auctionMapForm div {
+
+}
+
+body .log {
+    max-height: 215px;
+    overflow-x: auto;
+    border: 1px #ccc solid;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-size: 11px;
+}
+.log p {
+  margin: 0 0 2px 0; 
+}

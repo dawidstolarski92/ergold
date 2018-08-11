@@ -1,0 +1,8 @@
+[{shop_url}] 
+
+Hola 
+
+Esto es un TEST E-MAIL enviado desde su tienda.
+
+Si puede leer este mensaje, el test ha salido de puta madre. 
+

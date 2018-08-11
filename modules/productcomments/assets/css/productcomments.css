@@ -1,0 +1,227 @@
+body .cut-stars,
+.star_content {
+	width:70px;
+	height:10px;
+	position: relative;
+}
+.star-container {
+	display:flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;left:0;
+	justify-content:space-between;
+}
+.star-container svg {
+	width:10px;
+	height:10px;
+}
+.star-rating {
+	position: absolute;
+	height: 100%;	
+	overflow: hidden;
+}
+.star-rating svg {
+	color:#afafaf;
+}
+.cut-stars {
+	overflow: hidden;
+}
+#product_comments_block_extra {
+	padding:10px 0 0 0;
+	border-top:1px solid #ccc;
+	font-weight: bold;
+	font-size:12px;
+	line-height:18px
+}
+	
+#product_comments_block_extra a {
+    padding-left: 10px;
+	text-decoration: none;
+
+}
+
+#product_comments_block_extra a:hover {text-decoration: underline}
+
+#product_comments_block_extra .star_content {margin-top:2px}
+
+#product_comments_block_extra .comments_advices {clear:both;}
+
+/* pop-in add grade/advice ********************************************************************* */
+#id_new_comment_form {
+	padding-left: 30px;
+}
+
+.new_comment_form_content .intro_form {
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 12px
+}
+
+#new_comment_form label {
+	display: block;
+	font-size: 0.938em;
+	line-height: 1em;
+	margin: 0 10px 0 0;
+	color:#5f5f5f;
+}
+#new_comment_form textarea,
+#new_comment_form input {
+	background-color: transparent;
+	border: 1px solid #ececec;
+	color:#5f5f5f;
+	font-size: 0.875em;
+	line-height: 20px;
+	padding: 10px 10px 10px 40px;
+	width: 100%;
+}
+#new_comment_form input {
+	height: 40px;
+	margin: 0;
+}
+#new_comment_form textarea {
+	height: 90px;
+	padding: 15px 20px;
+	text-indent:20px;
+	background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='#333' viewBox='0 0 430.207 430.207'><path d='M270.601,4.924L7.385,268.14c-3.117,3.117-4.817,7.367-5.1,11.617L0.301,413.773c0,4.533,1.7,8.783,5.1,11.9 c3.117,3.117,7.65,4.533,11.9,4.533h0.283l130.05-1.133c4.533,0,8.783-1.417,11.9-4.533l265.483-265.483 c6.517-6.517,6.517-17.283,0-24.083L294.685,4.64C287.885-1.593,277.118-1.593,270.601,4.924z M140.268,395.64l-105.683,1.417 l1.7-109.933l175.667-175.667l106.25,106.25L140.268,395.64z M342.001,193.907L236.035,87.657l46.75-46.75l105.967,106.25 L342.001,193.907z'/></svg>") no-repeat 17px 17px;
+}
+@media (min-width:1024px) {
+.fancybox-wrap #new_comment_form textarea {
+	width:450px;
+	height:150px;
+}
+.fancybox-wrap #new_comment_form input {
+	width:450px
+}
+}
+#new_comment_form #commentCustomerName {
+	background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#666' viewBox='0 0 25 25'><path d='M3.001,23.986C3.001,24.543,3.452,25,4.003,25h16.993c0.551,0,1.002-0.457,1.002-1.014 c0-5.604-2.504-10.416-6.025-12.339c1.701-1.131,2.82-3.088,2.82-5.3c0-3.494-2.82-6.348-6.277-6.348 C9.061,0,6.223,2.835,6.223,6.347c0,2.212,1.119,4.152,2.821,5.3C5.505,13.57,3.001,18.383,3.001,23.986z M12.5,2.025 c2.354,0,4.273,1.941,4.273,4.322c0,2.38-1.92,4.321-4.273,4.321c-2.354,0-4.273-1.941-4.273-4.321 C8.227,3.967,10.146,2.025,12.5,2.025z M12.5,12.745c3.906,0,7.111,4.507,7.461,10.23H5.038C5.389,17.252,8.594,12.745,12.5,12.745z'/></svg>") no-repeat 15px 50%;
+}
+#comment_title {
+	background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='#666' viewBox='0 0 444.833 444.833'><path d='M55.25,444.833h334.333c9.35,0,17-7.65,17-17V139.117c0-4.817-1.983-9.35-5.383-12.467L269.733,4.533 C266.617,1.7,262.367,0,258.117,0H55.25c-9.35,0-17,7.65-17,17v410.833C38.25,437.183,45.9,444.833,55.25,444.833z M372.583,146.483v0.85H256.417v-108.8L372.583,146.483z M72.25,34h150.167v130.333c0,9.35,7.65,17,17,17h133.167v229.5H72.25V34z'/></svg>") no-repeat 15px 50%;	
+}
+#new_comment_form .submit {
+	margin-top:20px;
+	padding:0;
+	font-size:13px;
+	text-align:right
+}
+#new_comment_form button {
+}
+
+#new_comment_form #new_comment_form_footer {
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+/* TAB COMMENTS ******************************************************************************** */
+
+#product_comments .svgic-account {
+	width:25px;
+	height:25px;
+}
+.product_comments h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin: 0;
+}
+.product_comments .add-review {display: none}
+.section-title {
+	align-items:center;
+	margin: 0 0 40px;
+}
+.section-title h3 {
+	flex-grow:1;
+}
+.section-indent {
+	padding-right: 30px;	
+}
+.customer-icon {
+	align-items:center;
+	background-color: #e5e5e5;
+	border-radius:50%;
+	color:#fff;
+	display:flex;
+	height: 75px;
+	justify-content:center;
+	margin-right: 35px;
+	min-width: 75px;
+}
+.title-block-wrapper .flex-container {
+	align-items:center;
+}
+.title-block-wrapper svg {
+	width:10px;
+	height:10px;
+	margin:-1px 5px 0 0;
+}
+.title-block-wrapper div {
+	font-size: 0.75em;
+}
+.title-block-wrapper .title_block {
+	color:#4d4d4d;
+	flex-grow:1;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 1.5em;
+	margin: 0;
+}
+.comment_details {
+	flex-grow:1
+	}
+.comment_details .title-block-wrapper {
+	margin: 0 0 20px;
+}
+.comment_details p {
+	font-size: 0.938em;
+	color:#777;
+	line-height: 1.54em;
+}
+.comment {
+	margin-bottom: 50px;
+}
+.comment_author_infos {
+	color:#b1b1b1;
+	font-size: 0.875em;
+	letter-spacing: 0.08em;
+	margin-top: 1em;
+}
+#criterions_list {
+	margin-bottom: 2rem;
+	flex-direction:column
+}
+#criterions_list .svgic-pk-star polygon {
+	fill: none;
+	stroke:#000;
+	stroke-width:5px;
+	transition: all .5s ease-in-out
+}
+#criterions_list .star_on .svgic-pk-star polygon,
+#criterions_list .star_hover .svgic-pk-star polygon {
+	fill:#444;
+	stroke:none;	
+}
+#criterions_list .svgic-pk-star {
+	width:10px;
+	height:10px;	
+}
+#criterions_list .star {padding: 0 3px;}
+.criterions_list_wrapper {
+	align-items:center;
+	margin-bottom: 10px;
+}
+#new_comment_form #commentCustomerName {margin-right: 0px;}
+.new_comment_form_content__inputs {
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+.fancybox-inner #new_comment_form {
+	width: 100%;
+}
+.fancybox-inner #id_new_comment_form {padding: 0;}
+.fancybox-inner p, .fancybox-inner h2 {margin: 0 0 20px 0;}
+.fancybox-inner br {display: none;}
+.fancybox-inner .submit {margin-bottom: 0;}
+
+#extra-99 #new_comment_form {display: block !important;}

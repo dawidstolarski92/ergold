@@ -1,0 +1,26 @@
+﻿
+[{shop_url}] 
+
+Hola {name},
+ [{shop_name}]
+
+{subject}. 
+
+{message} 		 
+
+Consejos importantes de seguridad:
+
+* Protege los datos de tu cuenta.
+
+* Nunca revele sus datos de acceso.
+
+* Cambie su contraseña con regularidad.
+
+* Should you suspect someone is using your account illegally, please
+notify us immediately.
+
+Ya puedes realizar perdidos desde nuestra tienda: {shop_name}
+[{shop_url}] 
+
+ 
+

@@ -1,0 +1,42 @@
+/**
+ * LICENCE
+ * 
+ * ALL RIGHTS RESERVED.
+ * YOU ARE NOT ALLOWED TO COPY/EDIT/SHARE/WHATEVER.
+ * 
+ * IN CASE OF ANY PROBLEM CONTACT AUTHOR.
+ * 
+ * 
+ *  @author    Tomasz Dacka (kontakt@tomaszdacka.pl)
+ *  @copyright PrestaHelp.com
+ *  @license   ALL RIGHTS RESERVED
+ */
+
+.paczkomatyinpost_container{
+	padding: 20px;
+    background: #fac200;
+}
+#order-opc .paczkomatyinpost_container {
+	margin-bottom:20px;
+}
+.paczkomatyinpost_container:after{
+	clear:both;
+	content:"";
+	display:table;
+}
+
+.paczkomatyinpost_container .left{
+	float:left;
+	min-width: 120px;
+}
+.paczkomatyinpost_container .right {
+	float:left;
+}
+
+.paczkomatyinpost_container a {
+	display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+	color:#333;
+    cursor: pointer;
+}

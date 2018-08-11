@@ -1,0 +1,28 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname},
+
+Gracias por crear tu cuenta de cliente en {shop_name}. 
+
+Here are your login details:
+
+E-MAIL ADDRESS: {email}
+
+PASSWORD: {passwd} 		 
+
+Consejos importantes de seguridad:
+
+* Protege los datos de tu cuenta.
+
+* Nunca revele sus datos de acceso.
+
+* Cambie su contraseña con regularidad.
+
+* Should you suspect someone is using your account illegally, please
+notify us immediately.
+
+Ya puedes realizar perdidos desde nuestra tienda: {shop_name}
+[{shop_url}] 
+
+ 
+

@@ -1,0 +1,17 @@
+.icon-Adminjscomposer{
+	/*background: url('../../../image/admin-logo.png') no-repeat scroll 0 0;
+	background-position: center center; 
+	height: inherit; 
+	background-size: contain;
+	height: 16px;
+	width: 18px;*/
+}
+
+.icon-AdminRevolutionslider:before{
+	content: "\f03e";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+}

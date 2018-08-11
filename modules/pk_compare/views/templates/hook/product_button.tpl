@@ -1,0 +1,1 @@
+<a href="#" class="add_to_compare btn{if in_array($product_id,$in_compare)} in_comparison{/if}" data-pid="{$product_id}" title="{if in_array($product_id,$in_compare)}{l s='Remove from Comparison' mod='pk_compare'}{else}{l s='Add to Compare' mod='pk_compare'}{/if}"><svg class="svgic"><use xlink:href="#si-pk_compare"></use></svg></a>

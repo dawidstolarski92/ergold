@@ -1,0 +1,129 @@
+#bsmSelectbsmContainer0 {
+    font-size: 14px;
+}
+.list-group a, .list-group a:active, .list-group a:focus{
+    text-transform: capitalize;
+    outline: none;
+}
+.bootstrap .icon-copy {
+    color: #333333;
+}
+.warning {
+  border-top: 2px solid #fc6;
+  border-bottom: 2px solid #fc6;
+  background-color: #ff9;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.bsmOptionDisabled{
+    color: #CCCCCC;
+}
+.hide{
+    display: none !important;
+}
+.bsmHighlight {
+    color: #777;
+}
+.bsmSelect {
+    margin: 1em 0 0.25em;
+}
+#footer, #footer li {
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#footer {
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+.copyright {
+    font-size: 10px;
+}
+.bsmListSortableCustom li {
+    border-radius: 5px;
+    cursor: move;
+    margin: 2px 0;
+}
+.bsmList-custom {
+    display: block;
+    list-style: outside none none;
+    margin: 0.25em 0;
+    padding-left: 0;
+}
+.bsmListItem-custom {
+    background: none repeat scroll 0 0 #ddd;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    float: left;
+    line-height: 1em;
+    list-style: outside none none;
+    margin: 0 5px 5px 0;
+    padding: 4px;
+}
+.bsmListItem-custom:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0 0 3px #aaa;
+}
+.bsmListItemLabel-custom {
+    padding-right: 5px;
+}
+.bsmListItemRemove-custom {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+    display: block;
+}
+#bsmSelectbsmContainer0{
+    height:250px;
+}
+
+#topLoader {
+    position: absolute;
+    top: 15px;
+    z-index: 99;
+    width:256px;
+    height: 256px;
+    overflow: hidden;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+#loader-container {
+    text-align: center;
+}
+
+#loader-container {
+    display: none;
+}
+.cron_button{
+    color: #0099FF;
+}
+
+/* Style to make 1.5 look the same */
+.list-group-item.active {
+    background-color: #00aff0;
+    border-color: #00aff0;
+    color: #fff;
+    z-index: 2;
+}
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    position: relative;
+}
+.col-lg-2 {
+    width: 16%;
+    float: left;
+}
+.col-lg-10 {
+    width: 83.3333%;
+    float: right;
+}

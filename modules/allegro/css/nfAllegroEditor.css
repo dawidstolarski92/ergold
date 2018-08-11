@@ -1,0 +1,132 @@
+/* NF editor */
+#nf-editor {
+  border: 5px solid #fbfbfb;
+  padding: 15px;
+  max-width: 1050px;
+  background: #fff; /* PS 1.5 */
+}
+
+#nf-editor .nf-sections > * {
+  padding: 15px;
+  border-bottom: 1px dotted #ccc;
+}
+
+#nf-editor section.visible {
+  border: 1px dotted #ccc;
+  background: #fbfbfb;
+  cursor: auto;
+}
+
+#nf-editor section.nf-section {
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#nf-editor section.nf-section:hover {
+  background: #fbfbfb;
+}
+
+#nf-editor .item-6 {
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 15px;
+  float: left;
+}
+
+#nf-editor section .editor textarea, #nf-editor section .editor .mce-tinymce {
+  margin-bottom: 20px;
+}
+
+.fn-controlls {
+  /*display: none;*/
+  margin-bottom: 15px;
+}
+
+.nf-section > *, .nf-section textarea {display: none;}
+.nf-section > .items {display: block;}
+.nf-section.visible .fn-controlls {
+  display: block;
+  background: #fbfbfb;
+  padding: 5px;
+}
+
+
+.nf-section:hover .fn-controlls {}
+
+/* Controlls */
+.fn-controlls > * {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nf-add-row .fn-add-btn {
+  display: inline-block;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nf-add-row .fn-add-btn:hover {
+  opacity: 0.8;
+}
+
+
+.nf-add-row .fn-add-btn i.nf-text {
+  background-image: url('../img/3.png');
+}
+.nf-add-row .fn-add-btn i.nf-picture {
+  background-image: url('../img/1.png');
+}
+.nf-add-row .fn-add-btn i.nf-picture-text {
+  background-image: url('../img/5.png');
+}
+.nf-add-row .fn-add-btn i.nf-text-picture {
+  background-image: url('../img/4.png');
+}
+.nf-add-row .fn-add-btn i.nf-picture-picture {
+  background-image: url('../img/6.png');
+}
+
+.nf-btn-delete {
+  background-image: url('../img/2.png'); 
+  width: 46px;
+  height: 32px;
+  display: block;
+}
+
+.nf-btn-up {
+  background-image: url('../img/up.png'); 
+  width: 46px;
+  height: 32px;
+  display: block;
+}
+
+.nf-btn-down {
+  background-image: url('../img/down.png'); 
+  width: 46px;
+  height: 32px;
+  display: block;
+}
+
+.nf-add-row .fn-add-btn i {
+  width: 46px;
+  height: 32px;
+  display: block;
+}
+
+/* Add row */
+#nf-editor .nf-add-row {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  color: #00aff0;
+}
+
+.fn-controlls .fn-controll-delete {
+
+}
+
+#nf-editor .hide {display: none;}
+

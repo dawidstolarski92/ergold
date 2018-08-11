@@ -1,0 +1,20 @@
+.categList {
+	width:100%;
+	height: 200px !important;
+	display: block;
+}
+.categoriesArea label {text-align:left; line-height: 30px;}
+.productsArea {margin-left: 20px;}
+.manually_method .contain,
+.tabcategories { background: #FFF; border:1px solid #ccc !important; height: 200px; overflow:auto; width:100%; padding: 10px; border-radius: 3px; box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);}
+.manually_method .contain img {width: 100%; height: auto; display: block;}
+.manually_method label {width:auto !important; float:none !important; text-align:left;line-height: 30px;}
+.prodSection {width:80px; float: left; text-align:center; border:1px solid #eee; margin: 0 5px 5px 0; cursor: w-resize;}
+#allprdcts .prodSection {cursor: e-resize;}
+.prodSection img {width:auto;margin:0 auto; clear:both}
+.prodSection span {display: block;}
+.submitButton {padding-top: 10px !important;}
+label.l {width:300px; line-height: 13px; padding-top: 0;}
+.hide {display:none}
+.tabcategories li {cursor:w-resize}
+.bootstrap .form-horizontal .control-label {padding-top: 0 !important}

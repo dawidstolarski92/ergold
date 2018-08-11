@@ -1,0 +1,20 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname},
+
+Gracias por su pedido con referencia{order_name} desde
+{shop_name}. 
+
+Unfortunately, one or more items are currently out of stock. This
+may cause a slight delay in your delivery. Please accept our apologies
+and rest assured that we are working hard to rectify this. 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+
+Si realizó su pedido desde una cuenta de invitado, puede realizar un seguimiento del mismo desde la sección
+"Seguimiento de invitadio"
+[{guest_tracking_url}?id_order={order_name}]
+de nuestra tienda. 

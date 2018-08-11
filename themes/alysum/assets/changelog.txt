@@ -1,0 +1,599 @@
+v5.0.6 (14.06.2017)
+Fixed bugs:
+- isotope layout issues
+- modules translation issue
+- "my account page" view
+- sticky menu
+
+Improvements
+- product images now clickable with product link
+- added possibility to manage labels view
+- added possibility to change products per row in isotope
+- added option to hide all modules except filter on category page
+- added design of 404 page
+- added new Awkward Slider with points of interests
+
+
+v5.0.5 13.06.2017
+Fixed bugs:
+- missed manufacturer name for some products in pk_products module
+- small visual issues
+- display testimonials in "displayHome" hook
+- manage blog module through "HomePage Builder"
+- missed price in drop down cart
+
+Improvements
+- added dropdown fast "Login/Register" form
+- added "Popup" module
+
+
+v5.0.4 09.06.2017
+Fixed bugs:
+- "onboarding" feature prestashop issue after theme installation
+- instagram js error with unconfigured module
+
+Improvements
+- added "Maintenance" page design with countdown
+- speed improvements (js code optimization)
+
+
+v5.0.3 06.06.2017
+Fixed bugs:
+- responsive blog issues
+- testimonials display in left column
+- messages in "Theme settings" module
+- Brands page view
+- missed template for "Sitemap" page
+
+Improvements
+- added "Fullpage" demo preset
+- added "Electronics" demo preset
+- added "Import Demo" opportunity
+- added possiblitily to highlight product in "products" module
+- added "Smooth update" option
+- added "bestsellers" product to "isotope" module
+
+
+v5.0.2 30.05.2017
+Fixed bugs:
+- custom links multilang in "Flex Menu"
+- js errors when "combine js" feature is enables
+- wrong customer rating displays with comment
+- product listing layout issue
+
+Improvements
+- added blog extension
+- added chat extension
+
+
+v5.0.1 18.05.2017
+Fixed bugs:
+- visual issues in "Add to cart" popup
+- short description overlaid on category page 
+- issue with multiple products carousel
+- missed category image 
+
+Improvements
+- added option "items number to show" in manufacturers module
+
+
+v5.0 17.05.2017
+Prestashop 1.7.1 supported
+Completely new build of Alysum theme
+
+####################################
+
+v4.6 26.08.2016
+Prestashop 1.6.1.7 supported
+
+Fixed bugs:
+- Flex menu vulnerability
+- flex menu multi-language issue for custom links
+- crossselling autorotate issue
+- date of birth fields are too short on account registration page
+- missing icon for "My vouchers" in My account page
+- search page layout issue 
+- jqZoom in mobile devices
+- videobg module mobile view
+- contact us page responsiveness
+
+
+
+v4.5 09.11.2015
+Prestashop 1.6.1.2 supported
+
+Fixed bugs:
+- blank page when Fullpage Slider is enabled
+- autoplay issue in Awkward Slider
+- Minic Slider moved to BxSlider script from Nivo script because od large CPU usage
+- missed texture in color list on product list page
+- different time in countdown time in different browsers
+- Product Carousel autoplay issue
+- Simple Blog "maximum version" issue 
+- No images on manufacturers list page
+- Removed price from search list and bestsellers module in catalog mode
+- Vertical menu is responsive now
+- Missed "id_country" on checkout page
+- add autoplay feature to "banners carousel" module
+- remove default "Root" category from Isotope module
+- View of arrows in Sequesce slider 
+- Wrong tax excluded price in search list
+- Rich Snippet issue on product page 
+
+V4.4 14.07.2015
+Fixed bugs:
+- visual bug on "My Addresses" page
+- translation issue with "Layeredslider", "Countdown", "Newsletter", "Featured Posts"
+- popup module for mobile devices
+- issue with "Category Page" options in "Theme settings" module
+- visual bug with category description
+- french email "In Transit"
+- missed patterns
+- shipping in dropdown cart
+- product images in Vertical menu
+- missed icon for Merchandise Returns
+- conflict of promokit sliders with prestashop BO icons
+- position of newsletter in footer
+- fullpage slider button translation added
+- latin extended font issue
+
+
+V4.3 16.04.2015
+Fixed bugs:
+- installation issue of "Sequence Slider"
+- show/hide "grid/list" buttons
+- manufacturers view in non carousel mode
+- issue with settings of popup module
+- duplicated background image for maintenance mode
+- Awkward slider installation issue
+
+
+V4.2 24.03.2015
+Fixed bugs:
+- product carousel in vertical menu
+- installation of sequence slider
+ 
+
+Improvements
+- added new skin
+- added new fullpage slider
+- optimised speed of search with images
+
+
+V4.1 19.03.2015
+Fixed bugs:
+- issues with Awkward slider
+- order slider of Small slider
+- added missed Sequence Slider module
+
+Improvements
+- added new skin "Awkward"
+- added support of RTL languages
+- added "Instagram feed" module
+- added "Popup Message" module
+- added "PureChat" module
+- added dummy slides for "Layered Slider" and "Sequence Slider"
+- added countdown feature for product listing page, product page, and carousel modules
+
+
+V4.0 03.06.2014
+Improvements
+- updated design 
+- added 5 skins
+- added module "Layered Slider"
+- added module "Featured Posts"
+- added module "About Us"
+- added module "Banner Carousel"
+- added module "Block Features"
+- added 2 module "Products Carousel"
+- added module "Testimonials"
+- added module "Vertical Menu"
+- added module "Vedeo Background"
+- updated "Theme settings" module with a lot of improvements
+- removed module "Social Login"
+
+V3.2 03.06.2014
+Fixed bugs:
+- product carousel arrows issue
+- "alt" attribute for images in sequence slider
+- translation of blog pagination
+- old price view on "shopping cart" page
+- twitter module hashtag issue
+- issue with disabling Responsive mode
+
+Improvements
+- added "Quick view" for homepage carousels
+- added posibillity to change address in emil templates through back office
+
+V3.1 03.05.2014
+Fixed bugs:
+- small visual issues on mobile
+- issue with price on the product page
+
+Improvements
+- added function "1-click theme update"
+
+V3.0.9 01.05.2014
+Fixed bugs:
+- Email templates updated for Alysum Theme setting
+- Added tooltip for wishlist button
+- Fixed issue with compression of CSS and JS
+- AwShowcase position of points with different height of slide
+- Issue with custom link in Flex menu
+- product comparison issue
+
+V3.0.8 19.04.2014
+Fixed bugs:
+- price issue on product page
+- crosseling oin the cart and on product page
+- link to favorite products on my account page
+- position of curency and languages modules in header
+- "Availability" column on shopping cart page
+
+V3.0.7 18.04.2014
+Fixed bugs:
+- price issue on product page
+- product attributes as radio buttons fixed view
+- product carousel translation
+
+V3.0.6 14.04.2014
+Fixed bugs:
+- thickbox for product page
+- issue with states in the add new address section
+- view of square images in tablet and mobile
+
+Improvements
+- changed approach to disable homepage modules
+
+V3.0.5 12.04.2014
+Fixed bugs:
+- arrows in all carousels
+- footer blocks roll up when hover
+- logo for mobile devices
+- view on tablet of square images
+- added missed offerchat module
+- hover menu item
+- view of carousel on the product page
+
+V3.0.4 10.04.2014
+Fixed bugs:
+- translation issue of comingsoon page
+- translation issue of facebook module
+- disabled compare button issue
+- background color changing in "theme settings" module
+- voucher input field issue of checkout page
+- "add to cart" issue in isotope and product carousel modules
+- view of "related products" and "crosselling" modules
+
+V3.0.3 07.04.2014
+Fixed bugs:
+- all sliders issue with input fields
+- product availability and combinations issue on the product page
+- blog carousel on the homepage for all devices
+
+Improvements
+- added ability to use product images with any proportions.
+
+####################################################################
+
+V3.0.2 22.03.2014
+Fixed bugs:
+- productCarousel issue with saving settings
+
+####################################################################
+
+V3.0.2 22.03.2014
+Improvements
+- added recent post module
+
+####################################################################
+
+V3.0.1 20.03.2014
+Fixed bugs:
+- missed informaition about author in modules
+- fixed awShowcase module script
+- fixed theme settings homepage control
+
+####################################################################
+
+V2.9 24.01.2014
+Improvements
+- blog SEO iption added
+- Custom Maintanance module added
+- Demo slides import not oly for english but for all languages
+- Payment Gateways modules added
+
+Fixed bugs:
+- product comments issue
+- some visual defects
+
+####################################################################
+
+V2.8.1 02.12.2013
+Fixed bugs:
+- blog visual issues
+- address in french email templates
+
+####################################################################
+
+V2.8 27.11.2013
+Fixed bugs:
+- social icons in email template fixed for outlook
+- small slider problem with slide link
+- Mail.php file updated to pretashop 1.5.6.1
+
+
+Improvements:
+- new Blog module added
+- google rich snippets implemented
+- Italian language added for email templates
+- sticky menu option
+
+
+####################################################################
+
+V2.7 06.10.2013
+Fixed bugs:
+- isotope module manual addiing products
+- isotope module 480px width
+- video tab issue when there is no video code
+
+Improvements:
+- new flex menu module added
+- new zopim chat module added
+
+####################################################################
+
+V2.6 18.09.2013
+Fixed bugs:
+- isotope module images when "manually selected products" option enebled
+- isotope module, product selection algorithm updated
+- isotope module translation
+- Grid/list view variable saved with ajax
+- upload images issue in all sliders 
+- empty black square when "social login" module doesn't installed
+- static http links
+- fluid width of search button
+- pk_custom links translation
+- mobile logo size
+- contact us page no order reference
+
+Improvements:
+- added possibility to move homepage module to any custom hook
+
+####################################################################
+
+V2.5 27.08.2013
+Fixed bugs:
+- path to images in all minic sliders
+- no video frame when video code is not indicated
+- Layered navigation price filter
+- authentification in IE8
+- a lot of small visual defects
+- label NEW in IE to 45 degree
+
+Improvements:
+- new module "awShowcase Slider"
+- new module "Small Slider"
+- new module "Manufacturers Carousel"
+- updated module "Custom Links" 
+- updated module "Theme Settings" with "Home Control" feature 
+- clean installation process
+- "Install Demo Data" feature
+
+####################################################################
+
+V2.4 10.06.2013
+Fixed bugs:
+- reduce ammount issue in promominicslider
+- shopping cart taxes
+- facebook path to cache file 
+- authentification in IE8
+- lost images in the manufacturer list
+- comparison page buttons
+- decreased size of archive for install
+
+Improvements:
+- new module "Product Video"
+- new module "Social Login"
+
+####################################################################
+
+V2.3 04-04-2013
+
+Fixed bugs:
+- fixed issues in produxt.js and tools.js files.
+- fixed multilanguage issue in promominic slider
+
+Improvements:
+- added new translations of email templates (Russian and Lithuanian)
+- added new Sequensejs slider 
+- updated Nivo Slider
+- improved facebook module (error messages added)
+
+####################################################################
+
+V2.2 07-03-2013
+
+Fixed bugs:
+- newsletter_ext translation issue
+- promominicslider thumbnails and arrows 
+- text color changing
+
+Improvements:
+- email templates added
+
+####################################################################
+
+V2.1 27-02-2013
+
+Fixed bugs:
+- visual bugs in mobile view
+- newsletter_ext image uploading issue
+- "add to cart" visual effect for product page
+
+Improvements:
+- Improved theme performance
+- "Nivo slider plus promo" replaced with new "Promo Minic Slider"
+- temporary removed very slow "Social Login" module
+- added cache for facebook module
+
+####################################################################
+
+V2.0.1 19-02-2013
+
+Fixed bugs:
+- Facebook, twitter, Promoslider translation
+- "on sale" label in grid view
+- promo slider products in IE
+- wishlist images
+- wishlist button removed when user is not logged in
+- phone number field now with "*"
+
+####################################################################
+
+V2.0 18-02-2013
+
+Fixed bugs:
+- price in product carousel module
+- hide price in sliderpromo module when "hide price" function enabled
+- view of "viewed products" module
+- view of "top sellers" module with squared images
+- no images in "New products" module
+- missed "<div>" in megamenu
+- other small bugs...
+
+Improvements:
+- Alysum become a responsive theme with adaptive layout
+- possibility to change layout of theme (display column on the left or right)
+- possibility to change position of logo position (left or center)
+- remove theme's cache function in "Theme settings" module
+- added "LoginRadius" module, which allows users to login with their existing accounts on popular social networks
+- added "Custom Links" module to the top of your site
+- added "Facebook Like" module
+- added "Twitter" module
+- possibility to select only needed payment system icons in the footer
+- posibility to select type of products in the "Promo Slider" module
+- changed image's names from "..._default" to "..._alysum" (necessary condition for multistore feature)
+- added confirmation messages
+- improved "Add logo on footer" module, now you can select icons of payment systems
+
+
+List of files to update:
+
+All files in the Alysum 2.0 was updated.
+
+
+V1.9 30-11-2012
+
+Improvements:
+
+- hover effect on product carousel module
+- improved theme performance
+ 
+Fixed bugs:
+- change default "no image" product picture variable in mega menu
+- Block Nivo Slider plus Special products now support multistore
+- image on 5 step checkout
+- custom link in megamenu
+- view of "total" text in 5 step checkout
+
+V1.8 24-11-2012
+
+Improvements:
+
+- "Add to cart" animated process
+- Add opportunity to select type of colorpicker at the product page
+- 5 step checkout view
+ 
+Fixed bugs:
+
+- slider and product carousel rendering on iPad
+- double drop down arrows in IE at the product page
+- "add to cart" button visibility when product is unavailable
+- watermarks on product images
+- "Links block footer" module, add links function
+- "Mega menu" module, add custom links function
+- issue with address in the regester form
+- issue with images in jqZoom and fancybox
+- product image size in product list page in IE
+- guest tracking
+
+List of files to update:
+
+All files from "updates/1.8" folder
+
+
+V1.7 28-09-2012 Bugfixes
+- fixed square images in grid view of category page
+- fixed total table at the 5-step checkout page
+- fixed issue with mouse over product image on product page
+- fixed logo for multistore
+- fixed prices view in the sliderpluspromo module
+- fixed megamenu (multistore option)
+- fixed add to cart animatio in the "productCarousel" module 
+- fixed catalog mode option in the carousel and blockuserinfo module
+
+List of files to update:
+- updates/themes/alysum/css/square-images.css
+- updates/themes/alysum/css/alysum.css
+
+V1.6 28-09-2012
+- added opportunity to use square images
+- fixed Newsletter verification function
+- fixed opportunity to change the width of item in product carousel
+- fixed possible error with jquery.cookies.js file
+
+List of files to update:
+- updates/modules/blocknewsletter_ext/controllers/front/verification.php
+- updates/modules/blocknewsletter_ext/blocknewsletter_ext.php
+- updates/modules/blocknewsletter_ext/verification.php
+- updates/modules/themesettings/themesettings.php
+- updates/themes/alysum/modules/productsCarousel/productsCarousel.tpl
+- updates/themes/alysum/header.tpl
+- updates/themes/alysum/css/square-images.css
+- updates/modules/themesettings/js/jquery.ck.js
+
+V1.5 12-09-2012 Bugfixes
+- fixed CMS option in megamenu 
+- fixed 2 level of megamenu menu
+
+List of files to update:
+- updates/modules/blockmegamenu/css/superfish-modified.css
+- updates/modules/blockmegamenu/js/superfish-modified.js
+- updates/modules/blockmegamenu/blockmegamenu.php
+
+V1.4 12-09-2012 Bugfixes
+- fixed "on Sale" label position
+- fixed slogan position issue.
+- fixed search result view
+- fixed "Related Products" view
+- fixed link to facebook account in blocknewsletter_ext module
+- fixed color changing in themesettings module
+
+List of files to update:
+- updates/themes/alysum/css/alysum.css
+- updates/themes/alysum/css/global.css
+- updates/themes/alysum/product.tpl
+- updates/themes/alysum/modules/blocknewsletter_ext/blocknewsletter_ext.tpl
+- updates/modules/themesettings/themesettings.php
+
+V1.3 22-07-2012 Bugfixes
+- fixed product image zoom
+- fixed color selection on the product page
+- fixed shopping cart view
+- ready for Prestashop 1.5 RC2
+
+V1.2 12-07-2012 Bugfixes
+– Fixed information on the shopping cart page
+– Fixed shopping cart appearance
+- Fixed newsletter translation
+
+V1.1 12-07-2012 Added more information
+– Updated documentation
+– Fixed bug on menu
+– Fixed bug with product rating on product page
+– Added possibility to change product listing style on the manufacturer page
+
+V1.0 10-07-2012 Initial release
+– Released the theme for the first time

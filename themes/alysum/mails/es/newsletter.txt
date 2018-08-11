@@ -1,0 +1,8 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+{message} 
+
+ 
+

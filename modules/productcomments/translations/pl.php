@@ -1,0 +1,34 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_fd4b5401d4d3c7d32d158bfc1e552f3b'] = 'Podaj swoje imię';
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_f88dc17737f7fdd4464b2eb922a8f133'] = 'Wystąpił błąd podczas wysyłania twojej opinii.';
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_7fa4a3510dafd0eac6435c19861b2bb7'] = 'Opinia opublikowana';
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_f8694a9aae2eb045920f613cfa7f1235'] = 'Oczekuje na sprawdzenie przez moderatora.';
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_6bf852d9850445291f5e9d4740ac7b50'] = 'Treść opinii jest wymagana.';
+$_MODULE['<{productcomments}prestashop>productcomments-ajax_8aafe254c3e8dceb6425591b322044f2'] = 'Musisz odczekać %d sekund zanim dodasz nowy komentarz.';
+$_MODULE['<{productcomments}prestashop>productcomments_457dd55184faedb7885afd4009d70163'] = 'Ocena';
+$_MODULE['<{productcomments}prestashop>productcomments_4d3d769b812b6faa6b76e1a8abaece2d'] = 'Aktywny';
+$_MODULE['<{productcomments}prestashop>productcomments_6f7351657f795bc1357a53142b1184cc'] = 'Zatwierdź';
+$_MODULE['<{productcomments}prestashop>productcomments_ecf74aa77715220b378ec668e75655a8'] = 'Nie obraźliwy';
+$_MODULE['<{productcomments}prestashop>productcomments_reviews_87108100eebf98d9a8cede6eea9d9472'] = 'Dodaj opinię';
+$_MODULE['<{productcomments}prestashop>productcomments_ab51a81c76d95ddc762194d58ec5db63'] = 'Jesteś pewien, że chcesz zgłosić tę opinię?';
+$_MODULE['<{productcomments}prestashop>productcomments_9a2ccd41653469a8bd94fbb84b271a14'] = 'Twoja opinia została dodana!';
+$_MODULE['<{productcomments}prestashop>productcomments_b20968d9aecd2d075519992e9e2f1ffe'] = 'Twoja opinia została dodana, na stronie pojawi się po zatwierdzeniu przez moderatora.';
+$_MODULE['<{productcomments}prestashop>productcomments_186c30cab59f6b64a453778330d4bbf0'] = 'Nowa opinia';
+$_MODULE['<{productcomments}prestashop>productcomments_a60852f204ed8028c1c58808b746d115'] = 'Ok';
+$_MODULE['<{productcomments}prestashop>productcomments_34e80a799d144cfe4af46815e103f017'] = 'Opinie';
+$_MODULE['<{productcomments}prestashop>productcomments_b5c82723bd85856358f9a376bc613998'] = '%1$d z %2$d osób uznało tą opinię za pomocną.';
+$_MODULE['<{productcomments}prestashop>productcomments_39630ad6ee79b8653ea89194cdb45bec'] = 'Czy ta opinia była pomocna?';
+$_MODULE['<{productcomments}prestashop>productcomments_a6105c0a611b41b08f1209506350279e'] = 'tak';
+$_MODULE['<{productcomments}prestashop>productcomments_7fa3b767c460b54a2be4d49030b349c7'] = 'nie';
+$_MODULE['<{productcomments}prestashop>productcomments_28b3b1e564a00f572c5d4e21da986d49'] = 'Zgłoś';
+$_MODULE['<{productcomments}prestashop>productcomments_fbe2625bf3673be380d043a4bf873f28'] = 'Napisz opinię jako pierwszy';
+$_MODULE['<{productcomments}prestashop>productcomments_08c7d6f84301ee7d0aab0a5f67edc419'] = 'Na razie brak opinii klientów.';
+$_MODULE['<{productcomments}prestashop>productcomments_7966126831926ad29c528b239d69f855'] = 'Dodaj swoją opinię';
+$_MODULE['<{productcomments}prestashop>productcomments_614cffa523202658a898e34a5d94d05e'] = 'Twoje imię';
+$_MODULE['<{productcomments}prestashop>productcomments_b78a3223503896721cca1303f776159b'] = 'Tytuł';
+$_MODULE['<{productcomments}prestashop>productcomments_3421ad00975533fbbd5f17d2cb568125'] = 'Twoja opinia';
+$_MODULE['<{productcomments}prestashop>productcomments_94966d90747b97d1f0f206c98a8b1ac3'] = 'Wyślij';
+$_MODULE['<{productcomments}prestashop>tab_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Opinie';

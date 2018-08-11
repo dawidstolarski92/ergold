@@ -1,0 +1,12 @@
+#footer #twitter-feed {width: 214px;}
+#twitter-feed h4 {padding:0 0 27px 0px;}
+#footer #twitter-feed h4 a {text-decoration: none; color:#888}
+#footer #twitter-feed h4 a:hover {text-decoration: underline; color:#aaa}
+#footer #twitter-feed ul {border:none}
+#footer #twitter-feed ul li {border-style: none; padding:0 0 25px 28px; position: relative;}
+#twitter-feed .svgic.svgic-twitter {width:17px; height: 17px; color:#a3a19d; position: absolute; left:0; top:2px}
+#footer #twitter-feed ul li:hover {background-color: transparent;}
+#footer #twitter-feed ul li p.meta {padding:12px 0 0 0; color:#777; font-size:11px; text-transform: lowercase; font-style: italic;}
+#twitter-feed .tweet_time {display: block; padding-top: 10px;}
+#twitter-feed .tweet_time a {color:#e6e6e6 !important; font-family: Georgia !important; font-style: italic !important;}
+#twitter-feed .tweet_text {color:#efefef;}

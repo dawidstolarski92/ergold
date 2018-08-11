@@ -1,0 +1,361 @@
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper-mod {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+.bx-wrapper-mod img {
+	max-width: 100%;
+	display: block;
+	width: 100%;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper-mod .bx-viewport {
+	z-index:1
+}
+.bx-wrapper-mod .bx-pager,
+.bx-wrapper-mod .bx-controls-auto {
+	position: absolute;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper-mod .bx-loading {
+	min-height: 50px;
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper-mod .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	height:13px;
+	position: absolute;
+	bottom:20px;
+	z-index: 99;	
+}
+
+.bx-wrapper-mod .bx-pager .bx-pager-item,
+.bx-wrapper-mod .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper-mod .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 12px;
+	border:1px solid #7a7975;
+	background:none;
+	height: 12px;
+	margin: 0 5px;
+	outline: 0;
+	border-radius: 50%;
+}
+
+.bx-wrapper-mod .bx-pager.bx-default-pager a:hover,
+.bx-wrapper-mod .bx-pager.bx-default-pager a.active {
+	background: #7a7975;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper-mod .bx-prev {
+	left: 10px;
+}
+
+.bx-wrapper-mod .bx-next {
+	right: 10px;
+}
+
+
+.bx-wrapper-mod .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	z-index: 999;
+	text-align: center;
+}
+.bx-wrapper-mod .bx-controls-direction a:hover .svgic {
+	color:#fff;
+	}
+.bx-wrapper-mod .bx-controls-direction a .svgic {
+	width:24px;
+	height:24px;	
+}
+
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper-mod .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper-mod .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	
+	margin: 0 3px;
+}
+
+.bx-wrapper-mod .bx-controls-auto .bx-start:hover,
+.bx-wrapper-mod .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper-mod .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	
+	margin: 0 3px;
+}
+
+.bx-wrapper-mod .bx-controls-auto .bx-stop:hover,
+.bx-wrapper-mod .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper-mod .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper-mod .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper-mod .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper-mod .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+/* Styling the tooltips */
+.showcase-plus-anchor
+{
+	position:absolute;
+	width:26px;
+	height: 26px;
+	z-index:9999;
+	opacity:1;
+	border-radius:50%;
+	background:#d50000
+}
+.showcase-plus-anchor:before {
+	width:100%;
+	line-height: 26px;
+	content:"+";
+	color:#fff;
+	text-align: center;
+	top:0;
+	left:0;
+	font-size: 22px;
+	position: absolute;
+	}
+.showcase-plus-anchor .point_container,
+.bx-wrapper-mod .bx-controls-direction a.disabled {display: none}
+
+
+/* Styling the caption */
+.aw_slide-text
+{
+	color: #000;		
+	text-align: left;
+	position: absolute;
+	left: 60px;
+	top:145px;	
+	width:38%;
+}
+.aw_slide-text h3 {
+	color:#6f6f77;
+	font-size:25px;
+	line-height:40px;
+	padding-bottom: 10px;
+	font-style: italic;
+	font-family: Georgia;
+}
+.aw_slide-text h4 {
+	font: bold 40px/40px TrajanProRegular;
+	color:#3e3c39;
+	text-transform: none;
+	padding-bottom: 15px;
+	margin: 0;
+
+}
+.aw_slide-text p {
+	color:#777676;
+	font-size: 17px;
+	line-height: 25px;
+}
+div.showcase-tooltip
+{
+	background-color: #fff;
+	color: #000;
+	text-align: left;
+	padding: 10px;
+	z-index:9999;
+}
+div.showcase-tooltip img {
+	width:130px
+}
+.aw_pName {
+	color:#969696;
+	font-size: 14px;
+	line-height: 22px;
+	display: block;
+	text-align:center;
+	}
+.aw_price {
+	display: block;
+	font-size:20px;
+	line-height:26px;
+	color:#c5988b;
+	text-align:center;
+	}
+#aw_slider li {position: relative; display: none;}
+#aw_slider_container { margin:20px 0 0 0}
+#aw_slider .aw_slide-text {
+	position: absolute;
+	top:165px;
+	left: 80px;
+	}
+
+
+.aw_slide-text {	
+	-webkit-animation: fadeInDown .5s ease .5s forwards;	
+	-moz-animation: fadeInDown .5s ease .5s forwards;
+	-o-animation: fadeInDown .5s ease .5s forwards;
+	animation: fadeInDown .5s ease .5s forwards;
+	
+	-webkit-transform: rotateY(-90deg) translateX(0px) translateZ(2px);
+	-webkit-transform-origin: 0px 0;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-40px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-40px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-40px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.videoframe {width:100%; height:450px; display: block;}
+@media (max-width: 979px) and (min-width: 729px) {
+	.videoframe {height:450px}
+	#aw_slider .aw_slide-text {top:105px; left:50px; width:350px; }		
+}
+@media (max-width: 728px) and (min-width: 480px) {
+	.videoframe {height:300px}
+	#aw_slider .aw_slide-text {top:35px; left:50px; width:300px; }
+	#aw_slider .aw_slide-text div {line-height: 18px; font-size: 14px;}	
+	#aw_slider .aw_slide-text h3 {font-size:20px}
+}
+@media (max-width: 480px){
+	#aw_slider .aw_slide-text {top:20px; left:30px; width:230px; }
+	#aw_slider .aw_slide-text div {line-height: 14px; font-size: 12px;}	
+	#aw_slider .aw_slide-text h3 {font-size:14px; line-height: 20px;}
+}
+#aw_slider_container .bx-wrapper {height: auto;}
+@media (max-width: 728px) {
+    #aw_slider_container .aw_slide-text h3 {font-size: 30px}
+    #aw_slider_container .aw_slide-text h4 {font-size: 25px}
+}
+@media (max-width: 480px) {
+    #aw_slider_container .aw_slide-text h3 {font-size: 24px}
+    #aw_slider_container .aw_slide-text h4 {font-size: 18px; line-height: 10px}
+}

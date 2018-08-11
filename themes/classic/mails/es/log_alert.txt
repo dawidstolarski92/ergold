@@ -1,0 +1,11 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+WARNING: Ha recibido una nueva alerta en el registro de su Back Office.
+
+Puede revisarlo desde "TOOLS" &gt; "LOGS" section of your Back
+Office. 		 
+
+ 
+

@@ -1,0 +1,12 @@
+.pk_categories ul {
+	list-style: none;	
+}
+.pk_categories ul li{
+	padding: 3px 0;
+}
+.pk_categories ul ul{
+	padding-left: 20px;
+}
+#main .pk_categories li input {
+	margin-right: 7px;
+}

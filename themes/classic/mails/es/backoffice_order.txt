@@ -1,0 +1,11 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Se ha realizado un nuevo pedido en su nombre. 
+
+Please go on {order_link} [{order_link}] to
+finalize the payment. 		 
+
+ 
+

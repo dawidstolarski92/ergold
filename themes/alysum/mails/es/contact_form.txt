@@ -1,0 +1,18 @@
+[{shop_url}] 
+
+Su mensaje al servicio de soporte al cliente de {shop_name} 
+
+Su mensaje ha sido enviado con éxito.
+
+MESSAGE: {message}
+
+ORDER ID: {order_name}
+
+PRODUCT: {product_name}
+
+ATTACHED FILE: {attached_file} 		 
+
+Recibirá una respuesta lo antes posible. 
+
+ 
+

@@ -1,0 +1,30 @@
+.pk-categories-list ul {
+  list-style: none;
+  flex-wrap:wrap;
+}
+.pk-categories-list ul li{
+  width:25%;
+}
+.pk-categories-list ul li a:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.pk-categories-list ul li .pkcl-wrap{
+  display: block;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size:cover;
+  position: relative;
+}
+.pk-category-title {
+  position: absolute;
+  width:80%;
+  left:10%;
+  bottom:40px;
+  background-color:rgba(255,255,255,0.8);
+  padding: 30px;
+  color:#333;
+  text-align: center;
+}

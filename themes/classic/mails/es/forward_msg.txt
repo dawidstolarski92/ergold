@@ -1,0 +1,12 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+{employee} ha querido reenviarle esta conversación. 
+
+DISCUSSION HolaSTORY: {messages}
+
+{employee} añadió "{comment}" 		 
+
+ 
+

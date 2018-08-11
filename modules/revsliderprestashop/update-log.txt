@@ -1,0 +1,3 @@
+27-FEB-2016
+
+inc_php\revslider_slider.class.php -- setHeroSlide and getSlidesWPML methods added whom were missing earlier.

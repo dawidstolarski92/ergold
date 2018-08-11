@@ -1,0 +1,169 @@
+name: alysum
+display_name: Alysum
+version: 5.0.6
+author:
+  name: "Promokit"
+  email: "support@promokit.eu"
+  url: "http://promokit.eu"
+meta:
+  compatibility:
+      from: 1.7.0.0
+      to: ~
+  available_layouts:
+    layout-full-width:
+      name: Full Width
+      description: No side columns, ideal for distraction-free pages such as product pages.
+    layout-both-columns:
+      name: Three Columns
+      description: One large central column and 2 side columns.
+    layout-left-column:
+      name: Two Columns, small left column
+      description: |_|___|
+    layout-right-column:
+      name: Two Columns, small right column
+      description: |___|_|
+assets:
+  # If you're using this theme as child and you want to load
+  # the parent theme assets, uncomment this line.
+#  use_parent_assets: true
+
+  # The following lines are showing how to load assets in your page
+  # Uncomment and change value to start loading css or js files
+#  css:
+#    all:
+#      - id: custom-lib-style
+#        path: assets/css/custom-lib.css
+#    product:
+#      - id: product-style
+#        path: assets/css/product.css
+#        media: all
+#        priority: 200
+#  js:
+#    cart:
+#      - id: cat-extra-lib
+#        path: assets/js/cart-lib.js
+global_settings:
+  configuration:
+    PS_IMAGE_QUALITY: png
+    PS_SMARTY_FORCE_COMPILE: 1
+    ONBOARDINGV2_CURRENT_STEP: 14
+  modules:
+   to_enable:
+    - pk_categories
+    - pk_compare
+    - pk_customlinks
+    - pk_emailcontrol
+    - pk_flexmenu
+    - pk_instafeed
+    - pk_isotope
+    - pk_manufacturers
+    - pk_popup
+    - pk_products
+    - pk_testimonials
+    - pk_textblock
+    - pk_themesettings
+    - pk_videobg
+    - productcomments
+    - revsliderprestashop
+   to_disable:
+    - ps_socialfollow
+    - ps_customersignin
+    - welcome
+  hooks:
+    modules_to_hook:
+      displayBackOfficeHeader:
+        - revsliderprestashop
+      displayNav:
+        - ps_customersignin
+        - ps_languageselector
+        - ps_currencyselector
+        - pk_customlinks
+      displayTop:
+        - pk_customlinks
+        - ps_shoppingcart
+      displayTopColumn:
+        - revsliderprestashop
+      content_top:
+        - pk_textblock
+        - pk_products
+        - pk_testimonials
+        - pk_manufacturers
+        - pk_isotope
+        - revsliderprestashop
+      displayHome:
+        - pk_textblock
+        - pk_products
+        - pk_testimonials
+        - pk_manufacturers
+        - pk_isotope
+      content_bottom:
+        - pk_textblock
+        - pk_testimonials
+        - pk_manufacturers
+        - pk_products
+        - pk_isotope
+      displayFooterBefore:
+        - pk_themesettings
+      displayFooter:
+        - ps_emailsubscription
+        - ps_linklist
+        - pk_textblock
+      displayLeftColumn:
+        - ps_facetedsearch
+        - ps_categorytree
+        - ps_bestsellers
+        - pk_video
+        - revsliderprestashop
+      displaySearch:
+        - ps_searchbar
+      displayProductButtons:
+        - ps_sharebuttons
+      displayReassurance:
+        - blockreassurance
+      displayOrderConfirmation2:
+        - ps_featuredproducts
+      displayCrossSellingShoppingCart:
+        - ps_featuredproducts
+  image_types:
+    cart_default:
+      width: 126
+      height: 163
+      scope: [products]
+    small_default:
+      width: 80
+      height: 104
+      scope: [products, suppliers]
+    medium_default:
+      width: 500
+      height: 650
+      scope: [products, suppliers]
+    home_default:
+      width: 353
+      height: 489
+      scope: [products]
+    large_default:
+      width: 1000
+      height: 1300
+      scope: [products, suppliers]
+    category_default:
+      width: 1110
+      height: 500
+      scope: [categories]
+    stores_default:
+      width: 170
+      height: 115
+      scope: [stores]
+    brand_default:
+      width: 202
+      height: 150
+      scope: [manufacturers]
+theme_settings:
+  default_layout: layout-full-width
+  layouts:
+    category: layout-left-column
+    best-sales: layout-left-column
+    new-products: layout-left-column
+    prices-drop: layout-left-column
+    contact: layout-left-column
+    module-xipblog-archive: layout-left-column
+    module-xipblog-single: layout-left-column

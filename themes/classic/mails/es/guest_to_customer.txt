@@ -1,0 +1,17 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Su cuenta de invitado en {shop_name} has been transformed into a
+customer account. 
+
+E-MAIL ADDRESS: {email}
+
+PASSWORD: {passwd} 		 
+
+Por favor, tenga cuidado cuando comparta estos datos con otras personas. 
+
+Puede acceder a su cuenta de cliente desde nuestra web: {shop_url} 
+
+ 
+

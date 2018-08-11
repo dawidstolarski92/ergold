@@ -1,0 +1,30 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname},
+
+Gracias por su compra en {shop_name}! 
+
+Su pedido con referencia {order_name} has been placed
+successfully and will be SHolaPPED AS SOON AS WE RECEIVE YOUR PAYMENT. 
+
+Dispone de selected to pay by check. 
+
+Here are the bank details for your check:
+
+AMOUNT: {total_paid}
+
+PAYABLE TO THE ORDER OF: {cheque_name}
+
+PLEASE MAIL YOUR CHECK TO: {cheque_address_html} 		 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+
+Si realizó su pedido desde una cuenta de invitado, puede realizar un seguimiento del mismo desde la sección
+"Seguimiento de invitadio" [{guest_tracking_url}] section
+desde nuestra tienda. 
+
+ 
+

@@ -1,0 +1,132 @@
+.pk_cl ul {
+	list-style: none;
+	margin: 0;
+}
+.pk_cl li {
+	margin-left: 60px;
+	position: relative;
+}
+.pk_cl li:first-child {
+	margin-left: 0;
+}
+.pk_cl .pk_account li a {
+	line-height: 18px;
+	color:inherit;
+}
+.pk_cl .pk_account .dd_container {
+	border:none;	
+}
+.pk_cl .dd_container {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.watchlist {
+	width: 300px;
+	}
+.pk_cl li ul {
+	list-style-type: none;
+	margin: 0;
+}
+.pk_cl li span {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.pk_cl li a span {
+	margin: 0;
+}
+.pk_cl li ul li,
+.pk_cl2 li dl dt {
+	margin:-1px 0 0;
+}
+.pk_cl li ul li:first-child,
+.pk_cl2 li dl dt:first-child {
+	margin:0;
+}
+.pk_cl .content_img img {
+	float:left;
+	height: auto;
+	width:63px;
+}
+.pk_cl .text_desc {
+	float:left;
+	margin-left:10px;
+	width:140px;
+	}
+.pk_cl .text_desc a {
+	display: block;
+	font-size: 11px;
+	line-height: 14px;
+}
+.pk_cl .text_desc .price {
+	font-size:14px; 
+	line-height: 18px
+}
+li.no-products, 
+dt.no-products {
+	font-style: italic; 
+	line-height: 20px;
+	margin: 0;
+}
+.pk_cl > ul > li > a > .svgic {
+	display: none;
+	height: 15px;
+	width:15px;
+	margin: 0;
+}
+.header-4 .pk_cl > ul > li > a > .svgic {
+	height: 20px;
+	width:20px;
+}
+.icons-true .pk_cl .svgic {
+	display: inline-block;	
+}
+.pk_cl .svgic.input-icon {
+	width: 14px;
+	height: 14px;
+}
+.icons-true .pk_cl > ul > li > a {
+	display: inline-block;
+	color:inherit;
+}
+.icons-true .pk_cl > ul > li > a span {
+	display: none;
+}
+.icons-true .pk_cl > ul > li {
+	margin-left: 40px;
+}
+.pk_register .indent {
+	padding: 30px;	
+}
+.pk_register h4 {
+	margin: 0 5px;
+	font-weight: normal;
+	font-size: 16px;
+}
+.pk_register .title-wrap span {
+	padding: 0 10px 0px 10px;
+}
+.pk_register .title-wrap .active span {
+	border-bottom: 2px solid #444;
+	color:#444
+}
+.title-wrap {
+	justify-content:center;
+	margin-bottom: 25px;
+}
+.customer-form-container {
+	width:350px;
+	
+}
+.customer-form-container .focus-border {
+	margin: 0;
+	display: block;
+}
+.customer-form > div {
+	margin-bottom: 15px;	
+}
+.customer-form-tab {
+	cursor: pointer;	
+}
+.form-wrap > form:not(.active) {
+	display: none;	
+}

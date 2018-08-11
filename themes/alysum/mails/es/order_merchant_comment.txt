@@ -1,0 +1,9 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Ha recibido un mensaje de {shop_name} regarding order with
+the reference {order_name}.
+
+MESSAGE: {message} 		
+

@@ -1,0 +1,1 @@
+{$product->description|escape:'UTF-8'}

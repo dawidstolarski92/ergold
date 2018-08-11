@@ -1,0 +1,63 @@
+.list_options {width:800px}
+.list_options fieldset {
+	padding:0;
+	background:#fafafa;
+	border:1px solid #e1e1e1;
+}
+.heading {
+	height:40px;
+	background:#f1f1f1;
+	border-bottom:1px solid #e1e1e1;
+	margin-bottom: 30px;
+	position: relative;
+}
+.module-title {
+	width:200px;
+	float:left;
+	line-height: 40px;
+	font-size:16px;
+	position: relative;
+	z-index: 1;
+	}
+
+.module-title img {
+	float:left;
+	margin:12px 4px 0 20px;
+}
+.buttons_section {
+	height:40px;
+	float:left;
+	clear:right;	
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.buttons_section .button {
+	float:right;
+	margin-right:9px;
+	margin-top:9px;
+}
+.list_options input {
+	vertical-align:top; 
+	margin:1px 0 4px 0
+}
+.clear {clear:both}
+.margin.form {
+	margin-bottom: 20px;
+}
+hr	{border-bottom:1px solid #ccc}
+.confirm {
+	line-height: 40px;
+	background: rgba(2, 130, 14, 0.5);
+	padding-left: 195px;
+	color:#fff;
+	display:flex;
+	align-items:center;
+}
+.confirm svg {
+	width:14px;
+	height:14px;
+	margin-right: 10px;
+	fill:#fff;
+}

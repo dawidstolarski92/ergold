@@ -1,0 +1,1 @@
+{if $manufacturer}{$manufacturer->id|intval}{/if}

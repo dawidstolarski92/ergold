@@ -1,0 +1,112 @@
+.isotope {
+	flex-wrap:wrap
+}
+.pk-isotope .block_content {
+	width: calc(100% + 30px);	
+}
+.pk-isotope article .thumbnail-container {
+	margin-right: 30px;
+}
+.pk-isotope article {
+	margin-right: 0;
+	width:25%;
+}
+.filter {
+  justify-content:center;
+	margin-bottom: 40px;
+  list-style: none;
+}
+.filter h5 {
+	margin:0 12px;
+	text-align:center;
+}
+.filter h5 a {
+	color:#444;
+	text-transform: uppercase;
+	font-size:15px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+	padding: 0 20px 10px;
+	line-height: 19px;
+	display: block;
+	border-bottom:2px solid transparent;
+}
+.filter h5 a.selected {
+	border-color:#515151;
+}
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  transition-duration: 0.8s;
+}
+.isotope {
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  transition: none;
+}
+@media (min-width: 1170px) {
+	body #isotope li {
+		margin-right: 30px;
+		width:210px;
+	}
+	.isotope-col-3 .isotope article {
+		width:33.33%;
+	}
+	.isotope-col-4 .isotope article {
+		width:25%;
+	}
+	.isotope-col-5 .isotope article {
+		width:20%;
+	}
+	.isotope-col-6 .isotope article {
+		width:16.66%;
+	}
+}
+body .column_exist #isotope li {
+	width: 270px;
+	margin-right: 28px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.pk-isotope article {
+		width:33.33%;
+	}
+}
+@media (max-width: 768px) {
+	.pk-isotope article {
+		width:50%;
+	}
+}
+@media (max-width: 1024px) {
+	.filter h5 a {padding-left: 10px; padding-right: 10px;}
+	.filter h5 {padding: 0;}
+}
+@media (max-width: 500px) {
+	.filter {
+		flex-wrap:wrap
+	}
+	.filter h5 {margin: 0 0 15px 0;}
+}

@@ -1,0 +1,12 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Dispone de un mensaje relacionado con el pedido con referencia
+{order_name}.
+
+CUSTOMER: {firstname} {lastname} ({email})
+
+{message} 		 
+
+

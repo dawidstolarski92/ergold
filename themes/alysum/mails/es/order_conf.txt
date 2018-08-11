@@ -1,0 +1,67 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname},
+
+Gracias por su compra en {shop_name}! 
+
+ORDER: {order_name} Realizado el día {date}
+
+PAYMENT: {payment} 		 
+
+REFERENCE
+
+PRODUCT
+
+UNIT PRICE
+
+QUANTITY
+
+TOTAL PRICE
+
+{products} 
+
+{discounts} 
+
+PRODUCTS 
+
+{total_products} 
+
+DISCOUNTS 
+
+{total_discounts} 
+
+GIFT-WRAPPING 
+
+{total_wrapping} 
+
+SHolaPPING 
+
+{total_shipping} 
+
+TOTAL TAX PAID 
+
+{total_tax_paid} 
+
+TOTAL PAID 
+
+{total_paid} 
+
+CARRIER: {carrier}
+
+PAYMENT: {payment} 		 
+
+{delivery_block_html} 
+
+{invoice_block_html} 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+
+Si realizó su pedido desde una cuenta de invitado, puede realizar un seguimiento del mismo desde la sección
+"Seguimiento de invitadio"
+[{guest_tracking_url}?id_order={order_name}]
+de nuestra tienda. 
+
+

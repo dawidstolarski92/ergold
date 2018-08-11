@@ -1,0 +1,325 @@
+
+.toolbarBox span[class^='process-icon-new'] {
+  background-image: url(../img/process-icon-new.png);
+}
+
+.allegro .pageTitle a.selected, .allegro .pageTitle a:hover {
+    text-decoration: underline;
+}
+
+table.allegro_product td[rowspan] {
+    border-left: 1px solid #EAEDEF;
+    border-right: 1px solid #EAEDEF;
+}
+
+.is_15 .icon-check-sign, .is_15 .action-enabled {
+    background: url("../../../../img/admin/enabled.gif") no-repeat center center;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.is_15 .icon-check-empty, .is_15 .action-disabled {
+    background: url("../../../../img/admin/disabled.gif") no-repeat center center;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+#allegro_mass_create.is_15 {
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#allegro_mass_create.is_15 .panel-heading {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+    border: 0;
+}
+
+#allegro_mass_create.is_15 a {
+    text-decoration: underline;
+}
+
+#allegro_mass_create.is_15 #log {
+    padding: 5px;
+    font-style: italic;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+#allegro_mass_create.is_15 .progress-bar {
+    margin-bottom: 10px
+}
+
+/* Form PS 1.5*/
+.form-group.attribs {
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.form-group.attribs * label {
+    text-align: left;
+    float: none;
+}
+
+.form-group.attribs * input {
+    float: left;
+    float: none;
+}
+
+.override-box {
+    padding-left: 255px;
+}
+
+/* 123 */
+.is_15 .productTabs .list-group-item {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #CCCED7;
+}
+
+.is_15 .productTabs .list-group-item.active {
+    background: #EBEDF4;
+}
+
+.is_15 form#product_form h3, .panel-heading {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Toolbar buttons */
+.toolbarBox .process-icon-create_auction, .toolbarBox .process-icon-simulation {
+    background-image: url('../img/process-icon-new.png');
+}
+
+/* Form */
+.panel.form-horizontal {
+    background-color: #EBEDF4;
+    border: 1px solid #CCCED7;
+    color: #585A69;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 1em;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.help-block {
+    padding-left: 255px;
+    font-style: italic;
+}
+
+.attribs .radio {
+    display: inline-block;
+}
+
+table { 
+    border-spacing: 0px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.form-group table {
+    width: auto;
+}
+
+label.required:before {
+    content: "* ";
+    color: red;
+    font-size: 14px;
+    position: relative;
+    line-height: 12px;
+}
+
+label.required.allegro:before {
+    color: orange;
+}
+
+.override-box label {
+    font-style: italic;
+}
+
+.panel-footer {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.panel-footer > .btn {
+    margin-right: 20px;
+}
+
+.panel-footer button[type="submit"] {
+    float: left;
+}
+
+label.allegro-form-switch {
+    float: none;
+    width: auto;
+}
+
+.btn {
+    cursor: pointer;
+    background: #e3e3e3 url(../../../../img/bg-button-degrade.png) repeat-x scroll left top;
+    background: -moz-linear-gradient(center top , #F9F9F9, #E3E3E3) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, center top ,center bottom, from(#F9F9F9), to(#E3E3E3)) repeat scroll 0 0 transparent;
+    border-color: #CCCCCC #BBBBBB #A0A0A0;
+    border-left: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    border-right: 1px solid #BBBBBB;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    margin: 0;
+    outline: medium none;
+    padding: 3px 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 #fff;
+    display: inline-block;
+}
+
+/* Category select */
+#categoryPath {
+    margin-top: -4px;
+}
+
+#categoryContainer select {
+    min-width: 200px;
+}
+
+#categoryContainer input[type="text"] {
+    margin-left: 255px;
+}
+
+/* Alert */
+body #content .alert.alert-info {
+    color: #383838;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+    padding: 13px 5px 5px 40px;
+    min-height: 28px;
+    border-radius: 3px;
+
+    background: #FEEFB3 url(../../../../img/admin/icon-attention.png) no-repeat scroll 6px 6px;
+    border: 1px solid #9e6014;
+    color: #9e6014;
+}
+
+body #content .alert.alert-info * {
+    color: #9e6014;
+}
+
+.form-group .alert.alert-warning {
+    display: inline-block;
+}
+
+
+/* Toolbar buttons */
+.toolbarBox .process-icon-create_auction, .toolbarBox .process-icon-simulation {
+    background-image: url('../img/process-icon-new.png');
+}
+
+/* PRODUCTS FORM */
+.theme_prev {
+    margin: 5px 0 5px 255px;
+}
+
+input#auction-title {
+    min-width: 400px;
+}
+
+.allegro-msg.auction-create p a {
+    margin-right: 10px; 
+    text-decoration: underline;
+}
+
+.allegro-prev-next {
+    float: right;
+}
+
+.allegro-prev-next a {
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.allegro-prev-next .icon-forward::before {
+    content: "\2192";
+}
+
+.allegro-prev-next .icon-backward::before {
+    content: "\2190";
+}
+
+.slide-button.btn {
+    display: none;
+}
+
+/* ALLEGRO FIELD - CATEGORIES */
+.allegro-categories-tree {
+    padding-left: 255px;
+}
+
+/* ALLEGRO FIELD - SHIPPING */
+.panel.form-horizontal.shipping .form-group .col-lg-1 {
+    display: inline-block;
+}
+
+.panel.form-horizontal.shipping .allegro-head {
+    margin-left: 255px;
+}
+
+.panel.form-horizontal.shipping .allegro-head > * {
+    margin-right: 80px;
+}
+
+/* SYNC */
+.ajaxcall-recurcive.btn {
+    margin-right: 10px;
+}
+
+/* Admin order */
+#formAllegro {
+    background-color: #EBEDF4;
+    border: 1px solid #CCCED7;
+    color: #585A69;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 1em;
+
+    margin: 20px 0;
+}
+
+#formAllegro .well > *{
+    display: block;
+}
+
+#formAllegro .well dt {
+    float: left;
+    width: 100px;
+}
+
+/* FIXES */
+body .row {
+    background: transparent;
+}
+.margin-form label {float: none}
+
+/* Editor on product page */
+.form-group.nf-editor-group .col-lg-9 {
+    padding-left: 260px;
+}

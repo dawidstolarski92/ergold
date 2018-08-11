@@ -1,0 +1,738 @@
+[Price Wars 2.0]
+Wymagana wersja PHP 5.2 lub wyższa, Zalecana wersja PHP 5.3 lub wyższa
+Wymagana wersja MySQL 5.0.3 lub wyższa, Zalecana wersja MySQL 5.4 lub wyższa
+
+[Price Wars 3.0+]
+Od pricewars 3.0 wymagania zalecane stają się minimalnymi. tj. PHP 5.3 i Mysql 5.4 lub wyższe.
+
+[Price Wars 4.0+]
+Od pricewars 4.0 minimalne wymagania to . tj. PHP 5.4 i Mysql 5.4 lub wyższe.
+
+###
+v 4.1.6 [2018-01-10]
+- Obsługa nowego statusu ceneo (90 - towar na zamówienie)
+- SXF: Dodatkowa opcja pozwalająca wyłączyć z eksportu informacje o cenach promocyjnych
+- SXF: Usunięto opcję metody tworzenia opisu, która nie ma zastosowania w tym XML
+
+v 4.1.5 [2018-01-10]
+- Poprawiona interpretacja smarttagów
+
+v 4.1.4 [2018-01-08]
+- Ostatecznie poprawiono generowanie linków dla kombinacji atrybutów w PS 1.7
+
+v 4.1.3 [2018-01-05]
+- 1But: Poprawiono wykrywanie tagów
+- Skąpiec: availability_force jest w tej chwili brane pod uwagę przez integrację skąpca
+- Poprawiono generowanie linków dla kombinacji atrybutów w PS 1.7
+
+v 4.1.2 [2018-01-04]
+- 1But: Poprawiono błędy w XML
+- 1But: Dodano automatyczne wykrywanie atrybutów i cech
+
+v 4.1.1 [2018-01-03]
+- Poprawiono tłumaczenia
+- Dodano opcję umożliwiającą zmianę metody wyliczania cen
+
+v 4.1.0 [2017-12-21]
+- Dodano obsługę generowania xml Compari.ro
+
+v 4.0.2 [2017-12-15]
+- Usunięto błąd przez który nie można było ustawić bądź zmienić aliasu pliku xml
+
+v 4.0.1 [2017-12-06]
+- Poprawiono generowanie cen, które nie brały pod uwagę wzrostu ceny z atrybutu
+- Dodano nowe tagi utm_term i utm_content
+- Poprawiono możliwy problem z wyświetlaniem złego tłumaczenia
+
+v 4.0.0 [2017-12-06]
+- Zoptymalizowano szybkość generowania się XML. od 5% do 60% w zależności od ustawień sklepu. Im starszy sklep, tym większa wydajność optymalizacji
+- Poprawiono inicjalizację modułu - Inicjalizacja mogła wpływać na czas ładowania się strony z Modułami
+- Zmieniono wygląd opcji XML
+- Dodano wersję dla XML skąpiec, aby pracownicy skąpiec.pl mogli zweryfikować aktualność modułu
+- Dodano system tłumaczeń i tłumaczenie angielskie (Tłumaczenia przechowywane są w pliku translations.json w głównym katalogu modułu)
+- Zmieniono nazwę modułu "Price Wars 2" na "Price Wars II"
+- Aktaulizacja skryptu diagnostycznego
+- Empik: Poprawka w empik (brakujące {rate} w polu VAT)
+- Google: Poprawiono błąd związany z nazwą sklepu, jeśli zawierała znaki spcjalne XML
+- Zmiana minimalnej wersji PHP z 5.3 na 5.4
+
+v 3.14.3 [2017-11-02]
+- Poprawiono generowanie cen (price="" w niektórych wypadkach)
+- Zmieniono zachowanie czyszczenia cache cen - będzie on czyszczony rzadziej, dzięki temu XML może generować się szybciej
+
+v 3.14.2 [2017-11-02]
+- Dodano informacje do debugowania
+
+v 3.14.1 [2017-10-31]
+- Wprowadzono plik service.init.php, aby można było samemu zainicjować dodatkową konfigurację
+
+v 3.14.0 [2017-10-24]
+- Dodano obsługę generowania xml Empik
+
+v 3.13.0 [2017-10-18]
+- Naprawiono generowanie opisów w przypadku opcji "Preferuj opis krótki"
+
+v 3.12.10 [2017-10-03]
+- Dodano opcję "Budowa opisu na podstawie tagów produktu"
+- Poprawka w kodowaniu plików xml
+
+v 3.12.9 [2017-09-29]
+- Naprawiono opcję "Opis użyty do eksportu"
+- Dodano nowy smart-tag do pól {description_result} zawierający opis po transformacjach według opcji. Nadal można używać {description} i {description_short}
+
+v 3.12.8 [2017-09-28]
+- Hook: actionPricewarsBeforeOutput od tej pory ma dodatkowy parametr ['module'] w którym znajduje się obiekt modułu
+- Dodano public function getDebugLevel(), która pozwala na sprawdzenie, czy debuger jest włączony
+- Dodano public function getLogger() zwracająca obiekt posiadający metodę log()
+	Przykład użycia: $param['module]->getLogger()->log('Test'); // Zapiszę dowolną wiadomość do logów generowanych przez PW2
+
+v 3.12.7 [2017-09-28]
+- EMAG Poprawiono tagi w XML/CDATA
+- Poprawki w debugowaniu
+
+v 3.12.6 [2017-09-27]
+- W obiekcie product dostępna jest nowa właściwość - Cena netto bez zniżek - price_without_reduction_netto
+- Emag: uzupełniono pole recommended_price
+
+v 3.12.5 [2017-09-26]
+- Google: poprawiono błąd, gdzie tag XML dla grup produktów nie był poprawny
+
+v 3.12.4 [2017-09-24]
+- Stała PW2_REVERSE_EXCLUDE nie ma już znaczenia (tylko na ustawienia domyślne, ze względu na wsteczną kompatybilność)
+	Decydowanie o tym, czy lista to biała czy czarna przeniesiono do opcji
+- Dodano możliwość wykluczania atrybutów po samych ID produktów
+- Google: Poprawiono błąd, który mógł źle wpływać na grupowanie produktów przy dzieleniu po atrybutach
+
+v 3.12.3 [2017-09-24]
+- Dodano dodatkowe opcje dla generowania kodów produktów dla XML google
+- Poprawiono tłumaczenia dla nowych statusów ceneo
+- Poprawki dla własnych tagów otwierających w custom xml
+
+v 3.12.2 [2017-09-22]
+- Dodatkowe zmienne konfiguracyjne dla custom.php
+
+v 3.12.1 [2017-09-21]
+- Poprawiono niedziałający currency_iso_code
+- Dodano nowe stany ceneo
+- Poprawa w opisach w logach
+
+v 3.12.0 [2017-09-05]
+- Dodano obsługę generowania XML Emag Marketplace
+
+v 3.11.2 [2017-08-02]
+- Dodanie <item_​group_​id> do google (i fb)
+
+v 3.11.1 [2017-07-12]
+- Błąd w definicji xml guenstiger.de
+
+v 3.11.0 [2017-07-12]
+- Dodano obsługę generowania XML guenstiger.de
+
+v 3.10.2 [2017-06-26]
+- Google Merchant: Ograniczono opis produktu do 5000 znaków
+
+v 3.10.1 [2017-06-12]
+- Dodano brakujący plik spartoo
+
+v 3.10.0 [2017-06-06]
+- Dodano obsługę generowania XML Spartoo
+
+v 3.9.2 [2017-05-30]
+- Dodano eksport zdjęć przypisanych do kombinacji w SXF
+
+v 3.9.1 [2017-05-18]
+- Poprawienie błędu, gdzie można było zaznaczyć obie opcje ignorowania produktów z flagą sprzedaż = 0
+
+v 3.9.0 [2017-05-18]
+- Dodano możliwość ignorowania produktów z flagą sprzedaż (available_for_order) = 0
+
+v 3.8.1 [2017-05-08]
+- Poprawiono błąd w formacie google, który mógł powodować błędy w przetworzeniu oferty przez GMC.
+
+v 3.8.0 [2017-04-26]
+- XML Google eksportuje teraz wszystkie zdjęcia danego produktu
+- Zmieniono metodę pobierania stanów magazynowych dla formatów: ceneo, arena, ceneov1, jedenbut, lamoda, nokaut, okazje, skapiec, sxf i xszop
+- 1But: Dodano pole ean
+
+v 3.7.9 [2017-04-20]
+- Zmiana tagu oznaczającego wersje na komentarz (<!-- pw2ver 1.x.x -->)
+
+v 3.7.8 [2017-04-19]
+- Dodano możliwość uruchomienia mapowania wszystkich kategorii (W tym kategorii głównej) poprzez zdefiniowanie w konfiguracji sklepu stałej PW2_ENABLE_ALL_CATEGORIES = true
+	Jest to opcja, która niestety może nie działać poprawnie na Multistore, nie jest testowana i użycie jej jest na własną odpowiedzialność
+
+v 3.7.7 [2017-04-19]
+- W niektórych XML'ach dodano informację o obecnej wersji modułu (dla szybszego weryfikowania, czy moduł jest aktualny)
+- Poprawiono komunikaty błędów w przypadku słabych serwerów z problemami ze stabilnością (np. bazy danych).
+
+v 3.7.6 [2017-04-11]
+- Poprawiono błąd w SXF gdzie opcja redukcji stanów nie działała
+- Dodano dodatkową możliość redukcji stanów magazynowych do 20 sztuk.
+
+v 3.7.5 [2017-04-06]
+- Zawijanie linii na autocomplete w celu poprawienia czytelności
+- Poprawka dla formatu SXF: Usunięto opcję "Dziel produkt na osobne produkty jeśli zawiera atrybuty"
+
+v 3.7.4 [2017-03-29]
+- Zdjęto górne zabezpieczenia wersji Prestashop. Moduł od tej pory będzie się instalował na każdej wersji prestashop 1.5+
+
+v 3.7.3 [2017-03-28]
+- Dodano stan magazynowy do SXF
+- Zaktualizowano SXF do wersji 1.2
+
+v 3.7.2 [2017-03-24]
+- Poprawki do XML AGUA
+- Dodano ID do SXF
+
+v 3.7.1 [2017-03-23]
+- Dodano informacje o kategoriach do SEIGI XML Format
+
+v 3.7.0 [2017-03-23]
+- Dodany nowy format XML. Format opracowany przez nas na potrzeby eksportu katalogu presty wraz z cechami (SEIGI XML Format - SXF).
+
+v 3.6.7 [2017-03-18]
+- Zmieniono/przywrócono działanie benchmarku
+- Dodano informacje o rozpoczęciu generowania XML
+- Przeniesiono informacje o Shuhousin do check_server.php
+
+v 3.6.6 [2017-03-16]
+- Poprawki w automatycznym aktualizatorze
+
+v 3.6.5 [2017-03-06]
+- Poprawki dla XML google
+
+v 3.6.4 [2017-02-21]
+- Dodano informacje przy generowaniu XML, że kategorie nie są zmapowane. Dla zapominalskich :)
+
+v 3.6.3 [2017-02-21]
+- Wersje 3.6.0 do 3.6.2 nie zawierały poprawek z wersji 3.5.2 i 3.5.3. Zostały one dołączone do wersji 3.6.3
+
+v 3.6.2 [2017-02-21]
+- Poprawiono błąd w zaokrąglaniu pewnych wartości
+
+v 3.6.1 [2017-02-21]
+- Poprawiono błąd gdzie ustawienie wyświetlania ceny jednostkowej nie miało efektu
+
+v 3.6.0 [2017-02-10]
+- Dodano nowy format XML: Agua.pl oraz Esentia.pl
+
+v 3.5.3 [2017-02-09]
+- Dodano do Google Merchant eksport wagi ( dodatkowy wpis w Dodatkowych polach w XML <g:shipping_​​weight><![CDATA[{weight} {weight_unit}]]></g:shipping_​​weight> ). 
+	Dla istniejących XML należy dodać wpis ręcznie lub przywrócić ustawienia domyślne.
+
+v 3.5.2 [2017-01-19]
+- Poprawka do generowania opisów we wszystkich XML
+
+v 3.5.1 [2017-01-19]
+- 1But: poprawiono błąd powodujący nie wyświetlanie się formatu xml na liście.
+
+v 3.5.0 [2017-01-18]
+- Dodano nowy foramt XML: 1But
+
+v 3.4.1 [2016-12-19]
+- Dodano możliwość zdefiniowania stałej PW2_REVERSE_EXCLUDE (np. w defines.inc.php) która odwórci działanie pola "wykluczanie produktów" na "filtrowanie produktów"
+
+v 3.4.0 [2016-12-13]
+- Dodano możliwość zamiany ceny w XML na cenę jednostkową
+
+v 3.3.1 [2016-12-11]
+- Poprawiono błąd deklaracji w zanox
+- Skąpiec: XML dostosowany do nowych wymogów skąpiec.pl
+
+v 3.3.0 [2016-12-09]
+- Dodano XML w formacie zanox.com - dla systemu afilacyjnego zanox.com
+
+v 3.2.10 [2016-11-29]
+- Poprawiono bład: Strict Standards: Declaration of pricewars2\xmlGenerator\google::getCategoriesForMapping() should be compatible with pricewars2\XMLInterface::getCategoriesForMapping() 
+
+v 3.2.9 [2016-11-27]
+- Google Merchant: Dodano obsługę zagranicznych kategorii
+- Poprawiono błąd z powodu którego na niektórych sklepach nie generował się XML
+- Aktualizacja dokumentacji
+
+v 3.2.8 [2016-10-31]
+- Skąpiec: Poprawiono tag <availability>
+
+v 3.2.7 [2016-10-25]
+- Poprawki problemów z mapowaniem kategorii dla: mdla iszop, kszop, xszop
+- Poprawiono problem generowania linków dla konfigurowalnych produktów (brak ID)
+
+v 3.2.6 [2016-10-25]
+- Poprawiono błąd, gdzie nie można było wybrać XML Ceneo bez mapowania
+
+v 3.2.5 [2016-10-19]
+- Poprawiono eksport dodatkowych obrazków w module (wszystkie XML)
+- Poprawiono błąd, gdzie obrazek wysyłany do XML był pierwszym obrazkiem z galerii produktu, a nie okładką.
+- Ceneo: Naprawiono błąd, gdzie nie eksportowało dodatkowych obrazków
+
+v 3.2.4 [2016-10-18]
+- Dodano automatyczne usuwanie tagów html z opisów dla google
+
+v 3.2.3 [2016-10-16]
+- Poprawiono bląd w generowaniu XML Facebook (powstał w wersji 3.2.2)
+- Dodano obsługę wielu obrazków dla Okazje.info (Premium)
+
+v 3.2.2 [2016-10-15]
+- Dodano automatyczne usuwanie tagów html z opisów dla facebook - Facebook nie radzi sobie z opisami HTML
+
+v 3.2.1 [2016-10-14]
+- Naprawiono niemożliwość wybrania XML Idealo z pol wyboru XML.
+- Poprawiono widoczność nieaktywnych XML w Prestashop 1.6
+
+v 3.2.0 [2016-10-06]
+- Zmiany w systemie aktualizacji, dodanie nowych wersji modułu dla PHP 7
+
+v 3.1.0 [2016-09-23]
+- Zmiana biblioteki do automatycznego uzupełniania na (teoretycznie) szybszą
+
+v 3.0.11 [2016-09-04]
+- Fix: Dla XML idealo.pl - dodatkowe tagi delivery do edycji.
+
+v 3.0.10 [2016-08-31]
+- Poprawiono generowanie tagu data_utworzenia dla meble.pl
+- Przywrócono XML Idealo.pl
+
+v 3.0.9 [2016-08-25]
+- Fix: Brak tagu <attr> w ceneo
+
+v 3.0.8 [2016-08-25]
+- Fix: Błędnie ustawiany stan avail dla ceneo
+
+v 3.0.7 [2016-08-23]
+- Aktualizacja server_check.php - więcej przydatnych informacji
+- Dodatkowe informacje do debugowania
+
+v 3.0.6 [2016-08-18]
+- Fix: Błędy w generowaniu XML dla google Merchant (XML się w ogóle nie generował)
+
+v 3.0.5 [2016-08-16]
+- Fix: Brak opcji ustawiania dostępności dla ceneo
+
+v 3.0.4 [2016-08-05]
+- Poprawiono zamienione ceny promocyjna/zakupu w XML'ach: okazje i domodi
+
+v 3.0.3 [2016-08-04]
+- Poprawki w generowaniu wszystkich XMLi gdzie mógł wystąpić błąd kodowania
+- Poprawiono błąd, gdzie XMLe wysyłąły realny stan magazynowy zamiast nadpisanego
+- Wszystkie statusy dostępności itp są od tej pory sprawdzane na podstawie stanu nadpisanego przez moduł, a nie stanu realnego produktu
+
+v 3.0.2 [2016-08-03]
+- Poprawki w XML CeneoV1 (pokazywało się mapowanie w tym XML)
+- Dodatkowa możliwość zdefiniowania XML dla Ceneo w nowej wersji bez mapowania (zamiast mapowania pobierane sa kategorie sklepu) dla użytkowników premium.
+- Poprawki w XMLach dla kszop xszop i iszop
+
+v 3.0.1 [2016-08-02]
+- Poprawki w XML Google (dodanie brakujących CDATA)
+- Google znów przesyła ID zmapowanej kategorii zamiast pełnej ścieżki dla kategorii google
+- Fix dla atrybutu basket dla ceneo (brak spacji)
+
+v 3.0.0 [2016-08-02]
+- Ogólny refactoring kodu
+- UWAGA: Zmiana parametrów przekazywanych do pricewars2_product
+- Dodanie haka actionPricewarsBeforeOutput z 3 parametrami (jako alternatywa dla pricewars2_product())
+- Mini dokumentacja w custom_functions.php
+- Poprawiono generowanie linków w przypadku gdy włączona jest opcja utm_
+- Dodano opcję która umożliwia pomijanie atrybutów w przypadku tagów {atrybut:x} które nie są dostępne na magazynie (atrybut jest eksportowany tylko gdy występuje jego stan > 0 w co najmniej jednej kombinacji atrybutów)
+- Główna kategoria sklepu jest od tej pory pomijana przy generowaniu ścieżek sklepowych, chyba że produkt jest w kategorii głównej (np. dla google merchant)
+- Zmiany w opcjach XML (opcje zostały wstępnie pogrupowane)
+- Eksport wielu kategorii do Sklepy24
+- Zmiany w wyświetlaniu konfiguracji modułu
+- Zmiana ikonki modułu
+
+v 2.11.23 [2016-05-20]
+- Dodano możliwość ustawienia w opcjach parametru "Basket" dla XMLi ceneo (Premium)
+
+v 2.11.22 [2016-04-28]
+- W wersjach 2.11.20 i 2.11.21 wkradł się błąd który powodował, że pliki XML były źle generowane. Zostało to ostatecznie poprawione w tej wersji.
+
+v 2.11.21 [2016-04-28]
+- Poprawka błędu przy generowaniu niektórych XML
+
+v 2.11.20 [2016-04-27]
+- Poprawa eksportu opisów.
+
+v 2.11.19 [2016-04-20]
+- Naprawiono problem ze zdjęciami do pliku XML Ceneo
+
+v 2.11.18 [2016-04-18]
+- Poprawiono błąd związany ze zdjęciami - nie ta kolejnośc tagów <main/i>
+- Dodano możliwość zarządzania opcją basket w custom_functions (bool) $product['basket'] = false;
+- Poprawiono błąd producent dla meble.pl
+
+v 2.11.17 [2016-04-04]
+- Poprawki dla meble.pl
+
+v 2.11.16 [2016-04-04]
+- domknięcie <produkt> dla meble.pl
+
+v 2.11.15 [2016-04-04]
+- domknięcie CDATA dla meble.pl
+
+v 2.11.14 [2016-04-04]
+- custom_functions.php przyjmuje teraz 3 parametry (3-ci to id_lang)
+
+v 2.11.13 [2016-04-04]
+- Dodano obsługę dla Meble.pl (w podstawowej wersji, bez atrybutów)
+
+v 2.11.12 [2016-03-22]
+- Poprawki dla XML Facebook
+
+v 2.11.11 [2016-03-19]
+- Dodano XML dla Facebook (w formacie RSS)
+
+v 2.11.10 [2016-03-10]
+- Poprawiono XML ceneo który powodwał błąd jeśli nie było zdjęć w produkcie.
+
+v 2.11.9 [2016-03-10]
+- Poprawiono XML ceneo który powodwał błąd jeśli nie było zdjęć w produkcie.
+
+v 2.11.8 [2016-03-08]
+- Waga dla okazje.info nie będzie przekazywana, jeśli nie jest uzupełniona
+- Przy dzieleniu produktów po kombinacji atrybutów, będą pobierane tylko zdjęcia dla danej kombinacji, jeśli są przypisane.
+- Od tej pory można mapować kategorie, które są wyłączone
+
+v 2.11.7 [2016-02-22]
+- Poprawiono błąd w XML ceneo, gdzie pole avail było źle generowane. w wersji 2.11.6
+
+v 2.11.6 [2016-02-19]
+- Dodano dodatkowy parametr dla ceneo ['force_ceneo_availability'], który można dodać do tablicy $product w custom_functions.php, aby wymusić własny status dostępności dla ceneo
+
+v 2.11.5 [2016-02-08]
+- Funkcja custom_functions przyjmuje dodatkowy parametr (id_xml)
+
+v 2.11.4 [2016-02-08]
+- Poprawka dla XML i-Shop, k-Shop, x-Shop.
+
+v 2.11.3 [2016-02-07]
+- Poprawka dla XML Nokaut, gdzie pcja redukowania dostępności nie działała
+
+v 2.11.2 [2016-01-27]
+- Dodano plik custom_functions.example.php - więcej informacji w tym pliku
+
+v 2.11.1 [2016-01-27]
+- dodanie brakującego pliku arenacategories.php z listą kategorii dla Arena.pl
+
+v 2.11.0 [2016-01-27]
+- Dodanie XML dla Arena.pl
+- Zmiana Ikonki
+- Aktualizacja kategorii dla Gooogle Merchant i Ceneo
+- Usunięto opcję dostosowywania XML ceneo dla domodi, jako że domodi ma już własny XML
+- Ze względu na problemy i coraz większą ilość wyszukiware, zmieniono domyślne zdjęcie eksportowane na oryginalne (zamiast small_default)
+
+v 2.10.1 [2016-01-04]
+- Poprawienie błędu gdzie musiał być zaznaczony XML, aby zapisać ustawienia globalne.
+- Zmiana boxa licencji
+
+v 2.10.0 [2016-01-02]
+- Zmiana boxa licencji
+
+v 2.9.7 [2015-12-24]
+- Aktualizacja metod sprawdzania licencji.
+- Dodanie Benchmark'u.
+
+v 2.9.6 [2015-12-24]
+- Aktualizacja metod sprawdzania licencji.
+
+v 2.9.5 [2015-12-23]
+- Dodano możliwość blokowania producentów po ID
+- Dodano możliwość blokowania dostawców po ID
+
+v 2.9.4 [2015-11-30]
+- Poprawione kodowanie dla XMLi *-szop
+
+v 2.9.3 [2015-11-21]
+- Dodano możlowość eksportu oryginalnie wgranych zdjęć
+
+v 2.9.2 [2015-11-10]
+- Dodano informację o możliwych problemach jeśli na serwerze jest obecne rozszerzeni suhosin
+
+v 2.9.1 [2015-11-03]
+- Dodano możliwość eksportowania tylko produktów których % obniżki cen to co najmniej x%
+
+v 2.9.0 [2015-09-29]
+- Pierwsza wersja z aktualizatorem
+
+v 2.8.5 [2015-09-24]
+- Można dodawać tagi do domodi.pl, aczkolwiek nie jest to w ogóle potrzebne
+
+v 2.8.4 [2015-09-18]
+- Poprawka dla lamoda.pl - usuwanie spacji z nazwy atrybutu
+
+v 2.8.3 [2015-09-15]
+- Lamoda - atrybut availability poprawiony. Produkty na magazynie są dostępne od ręki, produkty które można zamówić,
+  ale nie ma ich na magazynie otrzymują status sprawdz w skleoue
+- Poprawiono błąd związany z nadpisywaniem stanów magazynowych, gdzie nadpisanie zmieniało dostępność produktu
+
+v 2.8.2 [2015-09-11]
+- Poprawiono naliczanie wag produktów przy aktywnej opcji dzielenia produktów po atrybutach
+
+v 2.8.1 [2015-09-04]
+- Jeśli klasa Category posiada metodę "getProducts_pw2" będzie ona użyta do pobrania produktów zamiast "getProducts" (Premium)
+
+v 2.8.0 [2015-08-07]
+Uwaga: Google Merchant po aktualizacji do tej (lub nowszej) wersji, będzie wymagał ponownego zmapowania kategorii.
+Jeśli nie zostanie to wykonane, to kategorie przekazane do google będą pomieszane
+
+- Google Merchant od tej pory używa przy mapowaniu oficjalnych ID google, aby zapobiec ew. problemom ze zmianą ID po aktualizacji pliku kategorii
+- Google Merchant od tej pory przekazuje do google ID kategorii google, zamiast ścieżki
+- Usunięto przycisk do aktualizacji Kategorii ceneo. Od tej pory pobrane kategorie będą dostarczane razem z modułem.
+- To samo, tyczy się pliku kategorii google - od tej pory jest on dostarczany z modułem
+- Ustawienia globalne od tej pory widoczne są cały czas, a nie tylko podczas edycji XML.
+- guzik "Edytuj" zmieniono na "Edytuj opcje XML"
+- Poprawione daty w changelog
+- Aktualizacja Kategorii ceneo i google.
+- Logi powinny się teraz generować poprawnie
+
+v 2.7.2 [2015-07-14]
+- Zmiany w komunikacji z serwerem licencji
+- Moduł od tej pory Wyświetla informacje o magic_quotes_gps jeśli są włączone.
+- Łatwiejszy dostęp do dokumentacji (link)
+- Dodatkowe komunikaty o błędach
+- Dodatkowy link do małego skryptu diagnostycznego
+
+v 2.7.1 [2015-07-12]
+- Poprawiono błąd w XML ceneo z atrybutem weight
+
+v 2.7.0 [2015-07-11]
+- Atrybut weight dla ceneo jest generowany tylko w momencie gdy waga produktu > 0
+- Dodatkowe atrybuty XML od tej pory obsługują atrybuty. Zostają one domyślnie rozdzielone ;
+- od tej pory XML Kategorii ceneo nie zostanie nadpisany, jeśli nie uda się go pobrać.
+- od tej pory w katalogu modułu znajduje się male narzędzie ułatwiające sprawdzenie, czy sklep ma poprawną konfigurację
+
+v 2.6.7 [2015-06-18]
+- Poprawiono bład w generowaniu logow jesli zostal podany niepoprawny parametr dodatkowego XML.
+
+v 2.6.6 [2015-06-18]
+- XML z ustawiony aliasem nie mogą od tej pory być wywoływane przez ID
+
+v 2.6.5 [2015-06-16]
+- Dodano możliwośc ignorowania produktów, które nie mają statusu "new". Czyli nie są nowością w sklepie.
+
+v 2.6.4 [2015-06-10]
+- Dodano nowy tag do pola parsowania {currency_iso_code}
+- Tag price dla google, został przeniesiony do pola dodatkowych tagów. Należy zresetować ustawienia XML goodle do domyślnych, lub dodać tag do sekcji dodatkowych tagów:
+	<g:price>{price} {currency_iso_code}</g:price>
+
+v 2.6.3 [2015-06-05]
+- Literówka i niedomknięty tag CDATA w google merchant
+
+v 2.6.2 [2015-06-03]
+- Poprawki w GTIN i wykrywaniu ean13 dla google merchant
+
+v 2.6.1 [2015-05-29]
+- Poprawka Źle zamkniętego tagu dla Sklepy24
+
+v 2.6.0 [2015-05-20]
+- UWAGA: Po tej aktualizacji, należy dla każdego zdefiniowanego XML użyć przycisku "Przywróć ustawienia domyślne" w edycji ustawień XML. W przeciwnym wypadku XML'e mogą przestać być poprawne.
+- Usunięto dodatkowe atrybuty z XML Ceneo (dla domodi.pl - domodi.pl ma teraz własny XML)
+- Usprawniono pobieranie nowego XML kategorii Ceneo. Czasem nie mógł on być pobrany ze względu na ustawienia serwera.
+- Dodano możliwość przywrócenia ustawień domyślnych dla XML
+- Dodano pierwszą wersję dokumentacji
+- Dodano podstawową możliwość wpływania na strukturę XML. Więcej informacji w dokumentacji.
+- Dodano możliwość odświeżenia/sprawdzenia aktualnego stanu licencji z poziomu konfiguracji modułu
+- Dodano integrację tagów utm_* - dla lepszej analizy z Google Analytics (lub innymi systemami wspierającymi parametry utm_)
+- Dodano możliwość zdefiniowania ID produktów, które nie będą eksportowane
+- Zoptymalizowano generowanie XML dla sklepów z dużą ilością produktów (20-30 tys.+) (rozwiązanie w fazie testów)
+
+v 2.5.12 [2015-05-06]
+- Poprawiono błąd związany ignorowaniem produktów które mieściły się między ceną minimalną a maksymalną
+
+v 2.5.11 [2015-05-06]
+- Dodatkowe dane debugowania
+- Zaktualizowany plik kategorii Ceneo.
+
+v 2.5.10 [2015-04-22]
+- Pole g:mpn od tej pory zawiera wartość z pola refference zamiast ean13
+- Poprawki dla Google Merchant:
+	Jeśli refference i ean13 jest pusty, ustawiany jest tag g:identifier_exists na wartość FALSE
+	w innym wypadku jest ustawiany atrybut g:gtin z wartośćią ean13 i/lub g:mpn z wartością refference
+
+v 2.5.9 [2015-04-15]
+- W panelu z włączonym SSL autocomplete powinien teraz zawsze działać
+
+v 2.5.7 [2015-04-01]
+- [e-mo] Dodano wykrywanie czy w emo_pn jest wartość EAN czy też kodproducenta. Do weryfikacji uzywana jest metoda Validate::isEan13
+
+v 2.5.6 [2015-04-01]
+- Zmiany w metodach wyświetlania błędów i dodatkowe informacje do debugowania
+
+v 2.5.5 [2015-03-24]
+- Znów nuda, i dodatkowe informacje do debugowania
+
+v 2.5.4 [2015-03-16]
+- Dodano dodatkowe informacje do debugowania dla ceneo (po raz trzeci, teraz już wszystko pokazuje co można)
+
+v 2.5.3 [2015-03-16]
+- Dodano dodatkowe informacje do debugowania dla ceneo
+
+v 2.5.2 [2015-03-16]
+- Dodano dodatkowe informacje do debugowania
+
+v 2.5.1 [2015-03-13]
+- Poprawiono generowanie atrybutu sizes dla domodi.pl
+
+v 2.5.0 [2015-03-12]
+- Sklepy 24 od tej pory pozwalają na eksport produktów bez producenta. 
+- Zmieniono domyślne ustawienia Eksportu produktów bez kodu producenta i/lub producenta na Eksportuj
+- Dodano masowe sterowanie stanem avail dla ceneo (statusy typu dostępne, wciągu 3 dni, sprawdź w sklpeie itp). Zachowanie w darmowej wersji modułu pozostaje bez. (PREMIUM)
+- Dodano możliwość % (przez mnożnik) zwiększenia cen dla XMLi - funkcja przydatna w momencie eksportu do platform, które pobierają prowizję od sprzedaży i nie kierują na sklep. (PREMIUM)
+- Dodano obsługę dedykowanego XML w formacie DoModi.pl
+
+v 2.4.0 [2015-02-26]
+- UWAGA: Zmiana globalizacji ustawień. Jeśli używają Państwo MultiShop to po tej aktualizacji należy sprawdzić sekcję "Ustawienia Globalne/Wspólne" w konfiguracji modułu
+- Dodano obsługę dla formatu KREOCen.pl (Premium)
+- Dodano możliwosć szybkiego zaznaczenia wszystkich produktów do eksportu w przypadku XMLi bez mapowania
+- Dodano podświetlanie wierszy przy mapowaniu, w celu łatwiejszej identyfikacji kategorii i jej ustawień
+
+v 2.3.6 [2015-01-31]
+- XML skąpiec nie powinien już wyświetlać błędu, tylko XML
+
+v 2.3.5 [2015-01-12]
+- Usunięto problem gdzie na nowych instalacjach moduł nie pokazywał się na liście
+
+v 2.3.4 [2014-12-15]
+- Dodano dodatkowe informacje podczas generowania logów dotyczące generowanie opisów
+
+v 2.3.3 [2014-12-15]
+- Dodano dodatkowe informacje podczas generowania logów dotyczące generowanie opisów
+
+v 2.3.2 [2014-11-14]
+- Jesli sklep ma wyłączone zarządzanie stanem magazynowym, to jest in importowany ze stanem magazynowym równym 100. (Opcja redukuj dostępność nadal wymusza stan magazynowy = 1)
+- Poprawiono eksport dodatkowych atrybutów (domodi) jesli sklep ma wyłączone zarządzanie stanem magazynowym.
+- Dodano informacje o ShopID i obecnej wersji w konfiguracji modulu.
+- Zmiana domyślnego stanu zachowania ignorowania produktu. Domyślnie produkty bez indeksu (refference) są od tej pory ignorowane.
+- Dodano opcje umożliwiającą przywrócenie oryginalnego zachowania ignorowania produktu bez indeksu (refference)
+- Zmiana domyślnego ustawienia eksportu produktów bez producenta. Od tej pory domyślną wartością jest nie eksportuj
+
+v 2.3.1 [2014-11-05]
+- Poprawiono błąd id_shop w XML Google
+
+v 2.3.0 [2014-10-08]
+- DoModi.pl - dodano usuwanie spacji z nazwy atrybutu, jeśli występują
+- Poprawiono błąd który na niektóych błędnie wykonanych konfiguracjach sklepu nie pozwalał na zapisanie ustawień
+
+v 2.2.5 [2014-10-04]
+- Dodano obsługę parametru ct=plain do generowania xml
+
+v 2.2.4 [2014-09-30]
+- Dodano obsługę atrybutów e-Mo. Pole reference jest automatycznie uzupełniane wartością atrybutu emo_pn
+- Dodano możliwość pomijania eksportu produktów w konkretnym zakresie cenowym (PREMIUM).
+- W XML Okazje tag <old_price> już nie występuje, jeśli nie ma promocji na dany produkt.
+
+v 2.2.3 [2014-09-15]
+- Poprawiono błąd który wyświetlał komunikat o będzie w sklepie, w którym wszystkie kategorie były poprawnie uzupełnione.
+
+v 2.2.2 [2014-09-08]
+- Dodano loader dla PHP 5.5
+
+v 2.2.1 [2014-07-30]
+- Usunięto możliwość dzielenia produktów w XML dla LaModa - XML obsługuje to w stwojej strukturze.
+
+v 2.2.0 [2014-07-29]
+- Dodano wstępną obsługę LaModa.pl
+
+v 2.1.7 [2014-07-16]
+- Dodano obsługę do eksportu wielu zdjęć w wersji premium (jeśli XML to obsługuje).
+	XMLe w których dodano obsługę eksportu wielu zdjęć: Nowy format Ceneo, Nokaut, Google Merchant
+	XMLe których oficjalna specyfikacja nie uwzględnia eksportu wielu zdjęć: Sklepy24, Oferciak, Okazje, Szoker, x-shop.pl, k-shop.pl, i-shop.pl
+- Dodano atrybut oldprice do XML Okazje
+- Dodano atrybut weight do XML Okazje
+- Dodano obsługę Skapiec.pl (Dokumentacja skapiec.pl wymaga stworzenia XML który nie jest poprawny według standardu budowy XML. W związku z tym Po otworzeniu XML w przeglądarce pojawi się błąd i jest to "normalne")
+
+v 2.1.6 [2014-06-16]
+- Poprawiono błąd "Error #515"
+
+v 2.1.5 [2014-05-23]
+- Dodano loader dla PHP 5.4
+
+v 2.1.4 [2014-05-23]
+- Od tej pory dodatkowe atryubty dla DOMODI.pl są ignorowane, jeśli ich stan magazynowy jest 0 i jeśli ustawienie "Eksportuj z zerowym stanem" jest ustawione na "Nie Eksportuj" lub Automatycznie
+	W innym wypadku, zerowe stany magazynowe są nadal eksportowane.
+
+v 2.1.3 [2014-05-22]
+- Odblokowano możliwość instalacji na sklepach 1.6
+
+v 2.1.2 [2014-05-08]
+- [Google Merchant] Dodano możliwość mapowania kategorii dla xml Google: <g:google_product_category />
+- [Google Merchant] Od tej pory tylko i wyłącznie zmapowane kategorie są eksportowane
+- Dodano opcję ignorowania produktów, które nie posiadają przypisanego producenta
+- Poprawienie literówki
+
+v 2.1.1 [2014-04-15]
+- Poprawiono błąd, gdzie był pobierany błędny stan mag. (produkty, których nie było były wyświetlane jako dostępne).
+- Dodano opcję, dzięki której można do XML Ceneo dodać codoatkowy atrybuty <oldprice> zawierający oryginalną cenę jak i atrybuty generowane na podstawie Atrybutów (Potrzebne dla http://domodi.pl/ - premium)
+
+v 2.1.0 [2014-03-25]
+- Dodano możliwość rozbijania atrybutów na różne produkty z uwzględnieniem cech.
+- Poprawka z wersji 2.0.3 naprawiająca generowanie zdjęć nie była zastosowana co formatu ceneo. W tej wersji zdjęcia z ceneo też będą generowane poprawnie.
+- Dodano linkowanie do FAQ w miejcach, które mogą budzic wątpliwości.
+- Dodano informacje na temat ilośći produktów w danej kategorii, aby użytkownik wiedział czy musi daną kategorię mapować czy też nie.
+- Dodano możliwość tworzenia aliasów dla XML dla użytkowników Premium
+- Popraka generowania zdjęcia XML Ceneo
+- Zmiana w informowaniu o zmianach z wersji 2.0.8
+
+v 2.0.8 [2014-03-19]
+Testowana na: 1.5.2.0, 1.5.6.0
+- W niektórych wypadkach limity serwera są wstanie uniemożliwić mapowanie kategorii. W przypadku jeśli jest to max_input_vars zostanie wyświetlony odp. komunikat.
+
+v 2.0.7 [2014-03-10]
+Testowana na: 1.5.2.0
+- Poprawiono generowanie linków do zdjęć we wszystkich XMLach
+
+v 2.0.6 [2014-03-10]
+Testowana na: 1.5.2.0
+- [Google Merchant] Poprawienie generowania linku dla Google Merchant
+- [Google Merchant] Tymczasowe usunięcie atrybutu "google_product_category"
+- [Google Merchant] Dodanie atrybutu "product_type"
+
+v 2.0.5 [2014-03-03]
+Testowana na: 1.5.2.0
+- [Ceneo] Dodany tag avail dla XML Ceneo aby zapobiec statusowi dostępności: "Sprawdź w sklepie".
+
+v 2.0.3 [2014-02-23]
+Testowana na: 1.5.2.0, 1.6.0.1
+- Naprawiono generowanie linków do zdjęć (był generowany link tylko do zdjęcia 'small_default' niezależnie od ustawień)
+- Rozdzielenie plików loader ładujących funkcje optymalizacji osobno dla php 5.3+ i dla wersji php 5.0.x - 5.2.x
+- Poprawka w wyświetlaniu dla Prestashop 1.6
+
+v 2.0.2 [2014-02-21]
+Testowana na: 1.5.2.0
+- Ustwienia dla każdego XML'a są definiowane indywidualnie, usunieto globalny nie działający formularz.
+- Na większych monitorach ustawienia modułu wyświetlane są w dwóch kolumnach
+- Nowy "Automatyczny" tryb wykrywania czy produkt ma być eksportowany - biorąc pod uwagę stan mag. i to czy można zamówić produkt jeśli nie ma go na magazynie.
+- Możliwość definiowania prefixów i sufixów dla nazw produktów lub kompletnego zasąpienia wszystkich nazw (dla każdego XML osobno).
+- Rozszerzona obsługa stanów magazynowych. PriceWars pobiera stam mag. uwzględniając stan magazynowy współdzielony dla grupy sklepów lub jeśli grupa nie wspóldzieli stanu to osobny stan dla każdego sklepu.
+- XML Nokaut zaktualizowany do specyfikacji: wersja 2.2.7, 2013-12-01 (bez wariantów)
+- XML Oferciak dodany wg. specyfikacji: 2008-10-30 (tak, 5 lat ma)
+- XML Szoker dodany wg. specyfikacji: Wersja 2.1 01.10.2010
+- Kilka mniejszych drobnych poprawek w tekscie, błędów i sprowadzenie opisów do jednego formatu
+- Dodano dodatkowe znacznii do formatowania nazwy produktu w XML: {{ean13}} {{producent_kod}} {{producent_nazwa}}
+- Małe poprawki w Google Merchants (linki, kod producenta, ean13)
+- Dodanie obsługi tagu <availability> dla GMerchants. 
+	Jeśli stan mag. produktu to więcej niż 1 to availability = "in stock" (nawet jeśli wymuszamy stan na 1)
+	Jeśli stan mag. produktu to 0 i można zamawiać produkt którego nie ma na stanie to availability = "available for order"
+	W każdym innym wypadku staus zostanie ustawiony na "out of stock"
+	W skrócie: Najpierw brana jest pod uwagę opcja "Eksportuj z zerowym stanem magazynowym", dopiero potem ustawiany jest status dla google merchant.
+	
+- Dodano obsługę i-szop.pl wg. dokumentacji: wersja 1.0.2, 2010-09-16
+	Integracja z i-szop.pl używa cech (features) w celu uzupełniania dodatkowych parametrów produktu:
+	Nazwy cech (bez polskich znaków, wielkość liter nie ma znaczenia) to: isbn, graczy, wiek, edycja, wydanie
+	
+- Dodano obsługę k-szop.pl wg. dokumentacji: wersja 1.0.0, 2010-12-23
+	Integracja z i-szop.pl używa cech (features) w celu uzupełniania dodatkowych parametrów produktu:
+	Nazwy cech (bez polskich znaków, wielkość liter nie ma znaczenia) to: isbn, seria, stron, okladka, autor, wydawca, tlumacz, rok
+	
+- Dodano obsługę x-szop.pl wg. dokumentacji: wersja 1.0.0, 2011-07-11
+	Brak cech dodatkowych uwzględnianych przy generowaniu XML
+	
+- Dodano obsługę opcji specyficznych dla XML (wymagane przez serwisy *-szop.pl)
+- Dodano możliwość usuwania zdefiniowanych XMLi (lepiej późno niż wcale).
+- Dodano obsługę tworzenia logów (przechowywane w katalogu cache sklepu) z informacjami co się dzieje dla każdego XML
+- Obsługa modyfikacji jaki opis ma być eksportowany
+- Dodano ograniczenia free/premium
+
+v 2.0.1 (testowa)
+Ważniejsze zmiany w porównaniu do Price Wars
+- Usunięto obsługę zakupy.onet.pl, gdyż serwis zmienił swoją funkcjonalność
+- Usunięto obsługę radar.pl ze względu na brak możliwości nawiązania współpracy przez nowe sklepy
+- Dodano możliwość wyboru kategorii eksportowanych dla każdego XML.

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Message from {shop_name}</title>
+<style>
+@import url("http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext");
+@import url("http://fonts.googleapis.com/css?family=Oswald");
+</style>
+</head>
+<body style="-webkit-text-size-adjust:none;background-color:#fff;width:100%;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;border-top:4px solid #7bae23; padding:0; margin:0">
+<table class="table table-mail" style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td style="width:50%">&nbsp;</td>
+		<td>
+			<table style="width:650px" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td align="center" class="logo" style="padding:55px 0 28px 0">
+						<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
+							<img style="border: none;" src="{shop_logo}" alt="{shop_name}">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding-bottom:12px">
+						<table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="width:25%; text-align:center">
+                          	<a href="{shop_url}" style="font:bold 15px 'PT Sans', sans-serif; text-transform:uppercase; color:#444645; text-decoration:none">Home</a>
+                          </td>
+                          <td style="width:25%; text-align:center">
+                          	<a href="{shop_url}?controller=my-account" style="font:bold 15px 'PT Sans', sans-serif; text-transform:uppercase; color:#444645; text-decoration:none">My Account</a>
+                          </td>
+                          <td style="width:25%; text-align:center">
+                          	<a href="{shop_url}?fc=module&amp;module=blockwishlist&amp;controller=mywishlist" style="font:bold 15px 'PT Sans', sans-serif; text-transform:uppercase; color:#444645; text-decoration:none">My Wishlist</a>
+                          </td>
+                          <td style="width:25%; text-align:center">
+                          	<a href="{shop_url}?controller=order-opc" style="font:bold 15px 'PT Sans', sans-serif; text-transform:uppercase; color:#444645; text-decoration:none">My Cart</a>
+                          </td>
+                        </tr>
+                      </table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:50%">&nbsp;</td>
+	</tr>
+	<tr style="background:#f4f4f4">
+		<td style="width:50%">&nbsp;</td>
+		<td>
+			<table style="width:650px" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td align="center" class="titleblock" style="padding:55px 0 65px 0">
+						<font size="2" face="PT sans, sans-serif" color="#555454">
+							<span class="title" style="font-weight:bold;font-size:40px;text-transform:uppercase;line-height:60px">Hi<br/></span><span class="subtitle" style="font-family: 'PT Sans';font-size:33px;line-height:38px; color:#565857">Estamos abiertos! Bienvenido a nuestra tienda <span style="color:#8db600">{shop_name}</span>.</span>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:50%">&nbsp;</td>
+	</tr>    
+	<tr style="background:#444645;">
+		<td style="width:50%; border-bottom:1px solid #383938">&nbsp;</td>
+		<td style="border-bottom:1px solid #383938; padding:40px 0">
+			<table style="width:650px" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td style="width:33%; vertical-align:top">
+						<h4 style="font-family: Oswald; font-size:18px; line-height:22px; margin:0 0 30px 0; color:#fff; font-weight:normal">CONTACT DETAILS</h4>
+						<div style="margin-right:30px">{email_contacts}</div>
+					</td>
+					<td style="width:34%; vertical-align:top">
+						<h4 style="font-family: Oswald; font-size:18px; line-height:22px; margin:0 0 30px 0; color:#fff; font-weight:normal">OUR ADDRESS</h4>
+						<div style="color:#ccc; line-height:30px">
+							<div style="margin: 0 50px 0 0">{email_addr}</div>
+						</div>
+					</td>
+					<td style="width:33%; vertical-align:top">
+						<h4 style="font-family: Oswald; font-size:18px; line-height:22px; margin:0 0 30px 0; color:#fff; font-weight:normal">FOLLOW US</h4>
+						<div style="margin-right:30px">{social_networks}</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:50%; border-bottom:1px solid #383938">&nbsp;</td>
+	</tr>
+	<tr style="background:#444645;">
+		<td style="width:50%; border-top:1px solid #535554">&nbsp;</td>
+		<td style="border-top:1px solid #535554">
+			<table style="width:650px" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td style="height:50px; line-height:50px; text-align:center; color:#ccc">
+						<span><a href="{shop_url}" style="color:#7bae23; text-decoration:none">{shop_name}</a> powered by <a href="http://promokit.eu/" style="color:#7bae23; text-decoration:none">Promokit Co&trade;</a></span>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td style="width:50%; border-top:1px solid #535554">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

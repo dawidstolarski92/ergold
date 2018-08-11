@@ -1,0 +1,20 @@
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Hay un problema con su pago en {shop_name} order with the
+reference {order_name}. Please contact us at your earliest
+convenience.
+
+WE CANNOT SHolaP YOUR ORDER UNTIL WE RECEIVE YOUR PAYMENT. 		 
+
+Puede revisar su pedido y descargar su factura desde la sección el
+"Historial de pedidos" [{history_url}] section of your
+customer account by clicking "Mi cuenta"
+[{my_account_url}] desde nuestra tienda. 
+
+Si realizó su pedido desde una cuenta de invitado, puede realizar un seguimiento del mismo desde la sección
+"Seguimiento de invitadio"
+[{guest_tracking_url}?id_order={order_name}]
+de nuestra tienda. 
+
