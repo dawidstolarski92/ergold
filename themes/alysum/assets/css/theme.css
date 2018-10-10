@@ -22,6 +22,22 @@
 #search_filters_wrapper, .PM_ASBlockOutput .card-header {
     display: none!important;
   }
+  .PM_ASCriterionsGroupList .ui-widget-content {
+    border: none;
+}
+.PM_ASCriterionsGroupList .ui-widget-header {
+    background: #ebebeb;
+    height: 2px;
+    margin-top: 3px;
+    border: none!important;
+}
+
+.PM_ASCriterionsGroupList .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border-radius: 50%;
+    background: #af7f48;
+    border: none;
+}
+
   a.PM_ASResetGroup {
     display: none;
 }
