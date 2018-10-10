@@ -18,6 +18,70 @@
     font-weight: '100';
     src: url('../fonts/RobotoSlab-Thin.ttf');
 }
+/* Advanced Search 4 - Advanced Styles Content */
+#search_filters_wrapper, .PM_ASBlockOutput .card-header {
+    display: none!important;
+  }
+  .PM_ASCriterionsGroupList {
+      font-family: 'Roboto Slab';
+      font-size: 12px!important;
+  }
+  .PM_ASCriterionsGroupTitle span {
+      font-size: 13px!important;
+  }
+  .PM_ASCriterionsGroupList label,
+  .PM_ASCriterionsGroupList a {
+      font-size: 12px!important;
+      padding: 5px 0px;
+  }
+  
+  li.PM_ASCriterionLevel.level1 a { 
+      font-weight: 400!important; 
+      }
+  
+  li.PM_ASCriterionLevel.level2 a { 
+      font-weight: 300!important;
+      padding-left: 10px; 
+      }
+  
+  li.PM_ASCriterionLevel.level3 a { 
+      font-weight: 300!important; 
+      padding-left: 30px;
+      }
+  
+  .PM_ASCriterionsGroupList label {
+      line-height: 30px;
+      font-weight: 300!important;
+  }
+  .PM_ASCriterionsGroupList .ui-widget-content {
+      border: none;
+  }
+  .PM_ASCriterionsGroupList .ui-widget-header {
+      background: #ebebeb;
+      height: 2px;
+      margin-top: 3px;
+      border: none!important;
+  }
+  
+  .PM_ASCriterionsGroupList .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+      border-radius: 50%;
+      background: #af7f48;
+      border: none;
+  }
+  
+  .PM_ASBlockOutputVertical .PM_ASResetSearch {
+      border: none!important;
+      border-radius: 3px;
+      background: #af7f48;
+      color: #fff;
+  }
+  
+  
+  i.material-icons.add, i.material-icons.remove {
+      font-style: normal;
+      font-size: 1px;
+  }
+  
 i.material-icons.add:before {
     content: '\f078';
 }
