@@ -18,6 +18,16 @@
     font-weight: '100';
     src: url('../fonts/RobotoSlab-Thin.ttf');
 }
+i.material-icons.add:before {
+    content: '\f078';
+}
+i.material-icons.remove:before {
+    content: '\f077';
+}
+i.material-icons.remove:before, i.material-icons.add:before {
+    font-family: FontAwesome;
+    font-size: 12px;
+}
 html {
     box-sizing: border-box;
   }
