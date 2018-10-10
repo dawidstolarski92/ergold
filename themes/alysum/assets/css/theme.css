@@ -22,6 +22,9 @@
 #search_filters_wrapper, .PM_ASBlockOutput .card-header {
     display: none!important;
   }
+  a.PM_ASResetGroup {
+    display: none;
+}
   .PM_ASCriterionsGroupList {
       font-family: 'Roboto Slab';
       font-size: 12px!important;
