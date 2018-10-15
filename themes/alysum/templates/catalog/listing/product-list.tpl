@@ -63,5 +63,5 @@
     </section>
 
   </section>
-  <script src="./../../assets/js/filters.js" type="text/javascript"></script>
+  <script src="./../../themes/alysum/assets/js/filters.js" type="text/javascript"></script>
 {/block}
