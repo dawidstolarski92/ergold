@@ -18,6 +18,10 @@
   font-weight: '100';
   src: url('../fonts/RobotoSlab-Thin.ttf');
 }
+@keyframes fade-in-anim {
+  0% { transform: scaleY(0) }
+  100% { transform: scaleY(1) }
+}
 /* Advanced Search 4 - Advanced Styles Content */
 #search_filters_wrapper, .PM_ASBlockOutput .card-header {
   display: none!important;
@@ -9325,8 +9329,8 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
   div.PM_ASBlockOutput {
     position: fixed;
     background: #fff;
-    top: 50%;
-    left: 50%;
+    top: 5vh;
+    left: 5vw;
     z-index: 999;
     width: 90vw;
     height: 90vh;
@@ -9336,10 +9340,10 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
     transition: clip-path 0.25s ease-out;
     display: block!important;
     margin-top: 0;
-    transform: translate(-50%, -50%);
     max-height: 0px;
     overflow: hidden;
     opacity: 0;
+    transform-origin: bottom left;
   }
 
   .filter-btn.active {
@@ -9355,6 +9359,7 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
   max-height: 100vh;
   overflow: scroll;
   opacity: 1;
+  animation: fade-in-anim .3s;
 }
 @media(min-width: 651px) and (max-width: 990px) {
   .PM_ASCriterionGroupCheckbox li {flex: 0 0 10%;}
@@ -9444,22 +9449,5 @@ div.PM_ASBlockOutput input:checked ~ label.PM_ASLabelCheckbox a {
       display:  none;
   }
   */
-        .urlop {
-          text-align:  center;
-          padding: 15px;
-          background: #af7f48;
-          font-weight: 200;
-          color:  #fff;
-          font-size: 15px;
-        }
-
-.urlop {
-  text-align:  center;
-  padding: 15px;
-  background: #af7f48;
-  font-weight: 200;
-  color:  #fff;
-  font-size: 15px;
-}
 
  
