@@ -63,5 +63,5 @@
     </section>
 
   </section>
-  <script src="./../../themes/alysum/assets/js/filters.js"></script>
+  $this->context->controller->addjs('js/file123.js', 'all');
 {/block}
