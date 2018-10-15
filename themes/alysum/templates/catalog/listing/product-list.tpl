@@ -26,7 +26,10 @@
 
 {block name='content'}
   <section id="main">
-
+  <div class="filter-btn">
+    <i class="fa-icon-filter"></i>
+    <span>Filtry</span>
+  </div>
     {block name='product_list_header'}
       <h2 class="h2">{$listing.label}</h2>
     {/block}
@@ -60,4 +63,5 @@
     </section>
 
   </section>
+  <script src="{$content_dir}themes/alysum/assets/js/filters.js" type="text/javascript"></script>
 {/block}
