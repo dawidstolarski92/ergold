@@ -11,7 +11,7 @@ $(document).ready(function(){
         $document.scroll(function() {
             $element.toggleClass(className, $document.scrollTop() >= 200);
         });
-        $element.on("click", function(){
+    $('.filter-btn').on("click", function(){
             console.log('clicked filters');
             toggler();
         });
@@ -19,6 +19,7 @@ $(document).ready(function(){
 
         function toggler() {
             console.log('function toggler also works');
+            alert('test');
             $('.PM_ASMobileMode ').addClass('active');
         }
 
