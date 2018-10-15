@@ -9333,11 +9333,13 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
     box-shadow: 0 0 0 10000px rgba(0,0,0, 0.5);
     overflow: scroll;
     border-radius: 7px;
-    clip-path: circle(var(--r, 0) at calc(50% + 0%) 100%);
     transition: clip-path 0.25s ease-out;
     display: block!important;
     margin-top: 0;
     transform: translate(-50%, -50%);
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
   }
 
   .filter-btn.active {
@@ -9350,8 +9352,9 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
   .PM_ASLabelCheckbox {flex: 0 0 50%}
 }
 .PM_ASBlockOutput.active {
-  --r: 120vh;
-
+  max-height: 100vh;
+  overflow: scroll;
+  opacity: 1;
 }
 @media(min-width: 651px) and (max-width: 990px) {
   .PM_ASCriterionGroupCheckbox li {flex: 0 0 10%;}
@@ -9441,6 +9444,15 @@ div.PM_ASBlockOutput input:checked ~ label.PM_ASLabelCheckbox a {
       display:  none;
   }
   */
+        .urlop {
+          text-align:  center;
+          padding: 15px;
+          background: #af7f48;
+          font-weight: 200;
+          color:  #fff;
+          font-size: 15px;
+        }
+
 .urlop {
   text-align:  center;
   padding: 15px;
@@ -9449,4 +9461,5 @@ div.PM_ASBlockOutput input:checked ~ label.PM_ASLabelCheckbox a {
   color:  #fff;
   font-size: 15px;
 }
+
  
