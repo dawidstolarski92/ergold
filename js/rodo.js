@@ -18,6 +18,7 @@ $(document).ready(function(){
 
 
         function toggler() {
+            console.log('function toggler also works');
             $menu.addClass('active');
         }
 
