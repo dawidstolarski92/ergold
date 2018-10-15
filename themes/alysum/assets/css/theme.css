@@ -9322,7 +9322,7 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
 
 @media(max-width: 991px) {
   .PM_ASCriterionGroupCheckbox li {flex: 0 0 20%;}
-  div#PM_ASBlockOutput_2 {
+  div.PM_ASBlockOutput {
     position: fixed;
     background: #fff;
     top: 50%;
@@ -9349,7 +9349,7 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
   }
   .PM_ASLabelCheckbox {flex: 0 0 50%}
 }
-#PM_ASBlockOutput_2.active {
+.PM_ASBlockOutput.active {
   --r: 120vh;
 
 }
@@ -9368,7 +9368,7 @@ body .pk_search_result .thumbnail-container a {padding: 0;}
   flex-direction: column!important;
 }
 
-ul#PM_ASCriterionGroupCheckbox_2_7 {
+ul#PM_ASCriterionGroupCheckbox_2_7, ul#PM_ASCriterionGroupCheckbox_3_7 {
   display: flex;
   flex-wrap: wrap;
 }
@@ -9385,32 +9385,32 @@ label.PM_ASLabelCheckbox {
   transition: background .3s;
 }
 
-div#PM_ASBlockOutput_2 input {
+div.PM_ASBlockOutput input {
   display: inline-block;
   width: 100%;
   opacity: 0;
   width: 0;
   height: 0;
 }
-div#PM_ASBlockOutput_2 label.PM_ASLabelCheckbox a {
+div.PM_ASBlockOutput label.PM_ASLabelCheckbox a {
   transition: .3s;
 }
-div#PM_ASBlockOutput_2 label.PM_ASLabelCheckbox a .PM_ASCriterionNbProduct {
+div.PM_ASBlockOutput label.PM_ASLabelCheckbox a .PM_ASCriterionNbProduct {
   display: none;
 }
-div#PM_ASBlockOutput_2 input:hover ~ label.PM_ASLabelCheckbox {
+div.PM_ASBlockOutput input:hover ~ label.PM_ASLabelCheckbox {
   background: #cdb08e;
   border-color: #cdb08e;
 }
-div#PM_ASBlockOutput_2 input:hover ~ label.PM_ASLabelCheckbox a {
+div.PM_ASBlockOutput input:hover ~ label.PM_ASLabelCheckbox a {
   color: #fff;
 }
-div#PM_ASBlockOutput_2 input:checked ~ label.PM_ASLabelCheckbox {
+div.PM_ASBlockOutput input:checked ~ label.PM_ASLabelCheckbox {
   background: #af7f48;
   border-color: #af7f48;
   color: #fff;
 }
-div#PM_ASBlockOutput_2 input:checked ~ label.PM_ASLabelCheckbox a {
+div.PM_ASBlockOutput input:checked ~ label.PM_ASLabelCheckbox a {
   color: #fff;
 }
 

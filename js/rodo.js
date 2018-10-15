@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         function toggler() {
             console.log('function toggler also works');
-            $('#PM_ASBlockOutput_2').addClass('active');
+            $('.PM_ASBlockOutput').addClass('active');
         }
 
 });
