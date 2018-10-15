@@ -9319,8 +9319,115 @@ html {
       padding: 50px;
       text-transform: uppercase;
   }
-  
-  .sidebar #custom-text {padding: 0;}
+
+@media(max-width: 991px) {
+  .PM_ASCriterionGroupCheckbox li {flex: 0 0 20%;}
+  div#PM_ASBlockOutput_2 {
+    position: fixed;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 90vw;
+    height: 90vh;
+    box-shadow: 0 0 0 10000px rgba(0,0,0, 0.5);
+    overflow: scroll;
+    border-radius: 7px;
+    clip-path: circle(var(--r, 0) at calc(50% + 0%) 100%);
+    transition: clip-path 0.25s ease-out;
+    display: block!important;
+    margin-top: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .filter-btn.active {
+    height: auto!important;
+    width: auto!important;
+    opacity: 1!important;
+    bottom: 35px!important;
+    transition: bottom .25s;
+  }
+}
+#PM_ASBlockOutput_2.active {
+  --r: 120vh;
+
+}
+@media(min-width: 651px) and (max-width: 990px) {
+  .PM_ASCriterionGroupCheckbox li {flex: 0 0 10%;}
+}
+.PM_ASBlockOutput.PM_ASMobileMode .card-block {
+  display: block!important;
+}
+@media(min-width: 992px) {
+  .PM_ASCriterionGroupCheckbox li {flex: 0 0 25%;}
+}
+.PM_ASCriterionGroupCheckbox li .checkbox {
+  flex-direction: column!important;
+}
+
+ul#PM_ASCriterionGroupCheckbox_2_7 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#PM_ASCriterionGroupCheckbox_2_7 .checkbox{
+  padding: 0 3px;
+}
+#PM_ASCriterionGroupCheckbox_2_7 label.PM_ASLabelCheckbox {
+  text-align: center;
+  display: inline-block;
+  min-width: 100%;
+  margin-top: -20px;
+  border-radius: 6px;
+  border: 1px solid #d3d3d3;
+  transition: background .3s;
+}
+
+#PM_ASCriterionGroupCheckbox_2_7 .checkbox input {
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#PM_ASCriterionGroupCheckbox_2_7 label.PM_ASLabelCheckbox a {
+  transition: .3s;
+}
+#PM_ASCriterionGroupCheckbox_2_7 label.PM_ASLabelCheckbox a .PM_ASCriterionNbProduct {
+  display: none;
+}
+#PM_ASCriterionGroupCheckbox_2_7 input:hover ~ label.PM_ASLabelCheckbox {
+  background: #cdb08e;
+  border-color: #cdb08e;
+}
+#PM_ASCriterionGroupCheckbox_2_7 input:hover ~ label.PM_ASLabelCheckbox a {
+  color: #fff;
+}
+#PM_ASCriterionGroupCheckbox_2_7 input:checked ~ label.PM_ASLabelCheckbox {
+  background: #af7f48;
+  border-color: #af7f48;
+
+}
+#PM_ASCriterionGroupCheckbox_2_7 input:checked ~ label.PM_ASLabelCheckbox a {
+  color: #fff;
+}
+
+
+.filter-btn {
+  position: fixed;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  background: #af7f48;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+}
+
+.sidebar #custom-text {padding: 0;}
   .sct-border {border:1px solid #eee; padding: 13px 10px 12px 0; text-align: left;}
   .sct-border span {line-height: 43px; padding-left: 100px;}
   .sects.sect-01 {background: url('/img/alysum/lc-ic-01.png') no-repeat 32px 13px}
