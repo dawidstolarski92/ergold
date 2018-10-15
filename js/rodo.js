@@ -12,6 +12,7 @@ $(document).ready(function(){
             $element.toggleClass(className, $document.scrollTop() >= 200);
         });
         $element.on("click", function(){
+            console.log('clicked filters');
             toggler();
         });
 
