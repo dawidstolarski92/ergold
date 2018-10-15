@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         function toggler() {
             console.log('function toggler also works');
-            $('.PM_ASBlockOutput').addClass('active');
+            $('.PM_ASMobileMode ').addClass('active');
         }
 
 });
