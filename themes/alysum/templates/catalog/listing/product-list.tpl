@@ -63,5 +63,4 @@
     </section>
 
   </section>
-  $this->context->controller->addjs('js/file123.js', 'all');
 {/block}
